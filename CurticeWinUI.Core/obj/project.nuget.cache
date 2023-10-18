@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "0Db5TJd0xKYoWu4LmeVt/GQyDRpGNb0C5lTiqlJtsUCSGaLCebuIOD4WLbcmBoiXalmHlxY+wl33EKN5rIFN6w==",
+  "success": true,
+  "projectFilePath": "D:\\VKUI3\\CurticeWinUI.Core\\CurticeWinUI.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Bezzu\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "CurticeWinUI (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "CurticeWinUI (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}
