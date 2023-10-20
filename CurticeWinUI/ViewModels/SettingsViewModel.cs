@@ -6,7 +6,6 @@ using CommunityToolkit.Mvvm.Input;
 
 using CurticeWinUI.Contracts.Services;
 using CurticeWinUI.Helpers;
-
 using Microsoft.UI.Xaml;
 
 using Windows.ApplicationModel;
@@ -27,12 +26,16 @@ public partial class SettingsViewModel : ObservableRecipient
     {
         get;
     }
+    private readonly ILocalSettingsService _localSettingsService;
 
-    public SettingsViewModel(IThemeSelectorService themeSelectorService)
+    public SettingsViewModel(IThemeSelectorService themeSelectorService, ILocalSettingsService localSettingsService)
     {
         _themeSelectorService = themeSelectorService;
+        _localSettingsService = localSettingsService;
+        SelectedPage = StartupPage;
         _elementTheme = _themeSelectorService.Theme;
         _versionDescription = GetVersionDescription();
+        SetStartupPageCommand = new RelayCommand<string>(async (pageKey) => await SetStartupPageAsync(pageKey));
 
         SwitchThemeCommand = new RelayCommand<ElementTheme>(
             async (param) =>
@@ -43,6 +46,8 @@ public partial class SettingsViewModel : ObservableRecipient
                     await _themeSelectorService.SetThemeAsync(param);
                 }
             });
+
+        
     }
 
     private static string GetVersionDescription()
@@ -62,4 +67,56 @@ public partial class SettingsViewModel : ObservableRecipient
 
         return $"{"AppDisplayName".GetLocalized()} - {version.Major}.{version.Minor}.{version.Build}.{version.Revision}";
     }
+
+    public ICommand SetStartupPageCommand
+    {
+        get;
+    }
+
+    private string _startupPage;
+    public string StartupPage
+    {
+        get => _startupPage;
+        set => SetProperty(ref _startupPage, value);
+    }
+
+    private string _selectedPage;
+    public string SelectedPage
+    {
+        get => _selectedPage;
+        set => SetProperty(ref _selectedPage, value);
+    }
+
+    private Dictionary<string, string> _pageKeys = new Dictionary<string, string>
+    {
+        { "SettingsPage", "CurticeWinUI.ViewModels.SettingsViewModel" },
+        { "NewsfeedPage", "CurticeWinUI.ViewModels.NewsfeedViewModel" }
+        // добавьте здесь другие страницы
+    };
+
+    public async Task InitializeAsync()
+    {
+        var startupViewModelName = await _localSettingsService.GetStartupPageAsync();
+        foreach (var kvp in _pageKeys)
+        {
+            if (kvp.Value == startupViewModelName)
+            {
+                SelectedPage = kvp.Key;
+                break;
+            }
+        }
+    }
+
+
+    private async Task SetStartupPageAsync(string pageKey)
+    {
+        if (_pageKeys.TryGetValue(pageKey, out var viewModelName))
+        {
+            StartupPage = viewModelName;
+            SelectedPage = pageKey; // Обновите выбранную страницу
+            await _localSettingsService.SetStartupPageAsync(viewModelName);
+        }
+    }
+
+
 }

@@ -10,7 +10,7 @@ D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\F
 D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\GroupsPage.xbf
 D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\MessagerPage.xbf
 D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\MusicPage.xbf
-D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\newsfeedPage.xbf
+D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\NewsfeedPage.xbf
 D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\NotificationsPage.xbf
 D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\PhotosPage.xbf
 D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\SettingsPage.xbf
@@ -273,8 +273,8 @@ D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\M
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\MessagerPage.g.cs
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\MusicPage.g.i.cs
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\MusicPage.g.cs
-D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\newsfeedPage.g.i.cs
-D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\newsfeedPage.g.cs
+D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\NewsfeedPage.g.i.cs
+D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\NewsfeedPage.g.cs
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\NotificationsPage.g.i.cs
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\NotificationsPage.g.cs
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\PhotosPage.g.i.cs
@@ -300,7 +300,7 @@ D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\F
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\GroupsPage.xaml
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\MessagerPage.xaml
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\MusicPage.xaml
-D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\newsfeedPage.xaml
+D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\NewsfeedPage.xaml
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\NotificationsPage.xaml
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\PhotosPage.xaml
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\SettingsPage.xaml
@@ -318,7 +318,7 @@ D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\F
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\GroupsPage.xbf
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\MessagerPage.xbf
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\MusicPage.xbf
-D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\newsfeedPage.xbf
+D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\NewsfeedPage.xbf
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\NotificationsPage.xbf
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\PhotosPage.xbf
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\SettingsPage.xbf

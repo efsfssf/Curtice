@@ -94,8 +94,8 @@ public partial class App : Application
             services.AddTransient<GroupsPage>();
             services.AddTransient<MessagerViewModel>();
             services.AddTransient<MessagerPage>();
-            services.AddTransient<newsfeedViewModel>();
-            services.AddTransient<newsfeedPage>();
+            services.AddTransient<NewsfeedViewModel>();
+            services.AddTransient<NewsfeedPage>();
             services.AddTransient<ShellPage>();
             services.AddTransient<ShellViewModel>();
 

@@ -22,7 +22,7 @@ public class DefaultActivationHandler : ActivationHandler<LaunchActivatedEventAr
 
     protected async override Task HandleInternalAsync(LaunchActivatedEventArgs args)
     {
-        _navigationService.NavigateTo(typeof(newsfeedViewModel).FullName!, args.Arguments);
+        _navigationService.NavigateTo(typeof(NewsfeedViewModel).FullName!, args.Arguments);
 
         await Task.CompletedTask;
     }

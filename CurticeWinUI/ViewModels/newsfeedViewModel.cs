@@ -2,9 +2,9 @@
 
 namespace CurticeWinUI.ViewModels;
 
-public partial class newsfeedViewModel : ObservableRecipient
+public partial class NewsfeedViewModel : ObservableRecipient
 {
-    public newsfeedViewModel()
+    public NewsfeedViewModel()
     {
     }
 }

@@ -263,8 +263,8 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
             _typeNameTable[35] = "CurticeWinUI.ViewModels.MessagerViewModel";
             _typeNameTable[36] = "CurticeWinUI.Views.MusicPage";
             _typeNameTable[37] = "CurticeWinUI.ViewModels.MusicViewModel";
-            _typeNameTable[38] = "CurticeWinUI.Views.newsfeedPage";
-            _typeNameTable[39] = "CurticeWinUI.ViewModels.newsfeedViewModel";
+            _typeNameTable[38] = "CurticeWinUI.Views.NewsfeedPage";
+            _typeNameTable[39] = "CurticeWinUI.ViewModels.NewsfeedViewModel";
             _typeNameTable[40] = "CurticeWinUI.Views.NotificationsPage";
             _typeNameTable[41] = "CurticeWinUI.ViewModels.NotificationsViewModel";
             _typeNameTable[42] = "CurticeWinUI.Views.PhotosPage";
@@ -351,8 +351,8 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
             _typeTable[35] = typeof(global::CurticeWinUI.ViewModels.MessagerViewModel);
             _typeTable[36] = typeof(global::CurticeWinUI.Views.MusicPage);
             _typeTable[37] = typeof(global::CurticeWinUI.ViewModels.MusicViewModel);
-            _typeTable[38] = typeof(global::CurticeWinUI.Views.newsfeedPage);
-            _typeTable[39] = typeof(global::CurticeWinUI.ViewModels.newsfeedViewModel);
+            _typeTable[38] = typeof(global::CurticeWinUI.Views.NewsfeedPage);
+            _typeTable[39] = typeof(global::CurticeWinUI.ViewModels.NewsfeedViewModel);
             _typeTable[40] = typeof(global::CurticeWinUI.Views.NotificationsPage);
             _typeTable[41] = typeof(global::CurticeWinUI.ViewModels.NotificationsViewModel);
             _typeTable[42] = typeof(global::CurticeWinUI.Views.PhotosPage);
@@ -446,8 +446,8 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
         private object Activate_35_MessagerViewModel() { return new global::CurticeWinUI.ViewModels.MessagerViewModel(); }
         private object Activate_36_MusicPage() { return new global::CurticeWinUI.Views.MusicPage(); }
         private object Activate_37_MusicViewModel() { return new global::CurticeWinUI.ViewModels.MusicViewModel(); }
-        private object Activate_38_newsfeedPage() { return new global::CurticeWinUI.Views.newsfeedPage(); }
-        private object Activate_39_newsfeedViewModel() { return new global::CurticeWinUI.ViewModels.newsfeedViewModel(); }
+        private object Activate_38_NewsfeedPage() { return new global::CurticeWinUI.Views.NewsfeedPage(); }
+        private object Activate_39_NewsfeedViewModel() { return new global::CurticeWinUI.ViewModels.NewsfeedViewModel(); }
         private object Activate_40_NotificationsPage() { return new global::CurticeWinUI.Views.NotificationsPage(); }
         private object Activate_41_NotificationsViewModel() { return new global::CurticeWinUI.ViewModels.NotificationsViewModel(); }
         private object Activate_42_PhotosPage() { return new global::CurticeWinUI.Views.PhotosPage(); }
@@ -751,15 +751,15 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 38:   //  CurticeWinUI.Views.newsfeedPage
+            case 38:   //  CurticeWinUI.Views.NewsfeedPage
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_38_newsfeedPage;
+                userType.Activator = Activate_38_NewsfeedPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 39:   //  CurticeWinUI.ViewModels.newsfeedViewModel
+            case 39:   //  CurticeWinUI.ViewModels.NewsfeedViewModel
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
@@ -1476,9 +1476,9 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
             var that = (global::CurticeWinUI.Views.MusicPage)instance;
             return that.ViewModel;
         }
-        private object get_35_newsfeedPage_ViewModel(object instance)
+        private object get_35_NewsfeedPage_ViewModel(object instance)
         {
-            var that = (global::CurticeWinUI.Views.newsfeedPage)instance;
+            var that = (global::CurticeWinUI.Views.NewsfeedPage)instance;
             return that.ViewModel;
         }
         private object get_36_NotificationsPage_ViewModel(object instance)
@@ -2236,10 +2236,10 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
                 xamlMember.Getter = get_34_MusicPage_ViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "CurticeWinUI.Views.newsfeedPage.ViewModel":
-                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CurticeWinUI.Views.newsfeedPage");
-                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "ViewModel", "CurticeWinUI.ViewModels.newsfeedViewModel");
-                xamlMember.Getter = get_35_newsfeedPage_ViewModel;
+            case "CurticeWinUI.Views.NewsfeedPage.ViewModel":
+                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CurticeWinUI.Views.NewsfeedPage");
+                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "ViewModel", "CurticeWinUI.ViewModels.NewsfeedViewModel");
+                xamlMember.Getter = get_35_NewsfeedPage_ViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "CurticeWinUI.Views.NotificationsPage.ViewModel":

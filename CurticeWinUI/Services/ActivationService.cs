@@ -14,8 +14,12 @@ public class ActivationService : IActivationService
     private readonly IThemeSelectorService _themeSelectorService;
     private UIElement? _shell = null;
 
-    public ActivationService(ActivationHandler<LaunchActivatedEventArgs> defaultHandler, IEnumerable<IActivationHandler> activationHandlers, IThemeSelectorService themeSelectorService)
+    private readonly ILocalSettingsService _localSettingsService;
+    private readonly INavigationService _navigationService;
+    public ActivationService(ILocalSettingsService localSettingsService, INavigationService navigationService, ActivationHandler<LaunchActivatedEventArgs> defaultHandler, IEnumerable<IActivationHandler> activationHandlers, IThemeSelectorService themeSelectorService)
     {
+        _localSettingsService = localSettingsService ?? throw new ArgumentNullException(nameof(localSettingsService));
+        _navigationService = navigationService ?? throw new ArgumentNullException(nameof(navigationService));
         _defaultHandler = defaultHandler;
         _activationHandlers = activationHandlers;
         _themeSelectorService = themeSelectorService;
@@ -68,5 +72,9 @@ public class ActivationService : IActivationService
     {
         await _themeSelectorService.SetRequestedThemeAsync();
         await Task.CompletedTask;
+
+        var startupPageKey = await _localSettingsService.GetStartupPageAsync();
+        if(startupPageKey == null) { return; }
+        _navigationService.NavigateTo(startupPageKey);
     }
 }

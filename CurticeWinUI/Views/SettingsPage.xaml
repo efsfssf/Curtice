@@ -51,6 +51,18 @@
                 </StackPanel>
             </StackPanel>
 
+            <DropDownButton Content="{x:Bind ViewModel.SelectedPage, Mode=TwoWay}">
+                <DropDownButton.Flyout>
+                    <MenuFlyout>
+                        <MenuFlyoutItem Text="Newsfeed Page" Command="{x:Bind ViewModel.SetStartupPageCommand}" CommandParameter="NewsfeedPage" />
+                        <MenuFlyoutItem Text="Settings Page" Command="{x:Bind ViewModel.SetStartupPageCommand}" CommandParameter="SettingsPage" />
+                        <!-- Добавьте здесь другие элементы MenuFlyoutItem для каждой страницы -->
+                    </MenuFlyout>
+                </DropDownButton.Flyout>
+            </DropDownButton>
+
+
+
             <TextBlock x:Uid="Settings_About" Style="{ThemeResource SubtitleTextBlockStyle}" />
 
             <StackPanel Margin="{StaticResource XSmallTopMargin}">

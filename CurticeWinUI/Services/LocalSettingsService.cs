@@ -85,4 +85,17 @@ public class LocalSettingsService : ILocalSettingsService
             await Task.Run(() => _fileService.Save(_applicationDataFolder, _localsettingsFile, _settings));
         }
     }
+
+    private const string StartupPageKey = "StartupPage";
+
+    public async Task<string> GetStartupPageAsync()
+    {
+        return await ReadSettingAsync<string>(StartupPageKey) ?? "CurticeWinUI.ViewModels.NewsfeedViewModel";
+    }
+
+    public async Task SetStartupPageAsync(string pageKey)
+    {
+        await SaveSettingAsync(StartupPageKey, pageKey);
+    }
+
 }

@@ -14,7 +14,7 @@ public class PageService : IPageService
 
     public PageService()
     {
-        Configure<newsfeedViewModel, newsfeedPage>();
+        Configure<NewsfeedViewModel, NewsfeedPage>();
         Configure<MessagerViewModel, MessagerPage>();
         Configure<GroupsViewModel, GroupsPage>();
         Configure<MusicViewModel, MusicPage>();

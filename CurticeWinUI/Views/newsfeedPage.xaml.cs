@@ -4,16 +4,16 @@ using Microsoft.UI.Xaml.Controls;
 
 namespace CurticeWinUI.Views;
 
-public sealed partial class newsfeedPage : Page
+public sealed partial class NewsfeedPage : Page
 {
-    public newsfeedViewModel ViewModel
+    public NewsfeedViewModel ViewModel
     {
         get;
     }
 
-    public newsfeedPage()
+    public NewsfeedPage()
     {
-        ViewModel = App.GetService<newsfeedViewModel>();
+        ViewModel = App.GetService<NewsfeedViewModel>();
         InitializeComponent();
     }
 }
