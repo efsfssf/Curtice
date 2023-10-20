@@ -35,7 +35,14 @@ public partial class SettingsViewModel : ObservableRecipient
         SelectedPage = StartupPage;
         _elementTheme = _themeSelectorService.Theme;
         _versionDescription = GetVersionDescription();
-        SetStartupPageCommand = new RelayCommand<string>(async (pageKey) => await SetStartupPageAsync(pageKey));
+
+        SetStartupPageCommand = new RelayCommand<string>(async(pageKey) =>{
+            if (pageKey == null)
+            {
+                throw new ArgumentNullException(nameof(pageKey));
+            }
+            await SetStartupPageAsync(pageKey); 
+        } );
 
         SwitchThemeCommand = new RelayCommand<ElementTheme>(
             async (param) =>
@@ -73,21 +80,35 @@ public partial class SettingsViewModel : ObservableRecipient
         get;
     }
 
-    private string _startupPage;
+    private string _startupPage = default!;
     public string StartupPage
     {
         get => _startupPage;
-        set => SetProperty(ref _startupPage, value);
+        set
+        {
+            if (value == null)
+            {
+                throw new ArgumentNullException("_startupPage is required.");
+            }
+            SetProperty(ref _startupPage, value);
+        }
     }
 
-    private string _selectedPage;
+    private string _selectedPage = default!;
     public string SelectedPage
     {
         get => _selectedPage;
-        set => SetProperty(ref _selectedPage, value);
+        set
+        {
+            if (value == null)
+            {
+                throw new ArgumentNullException("_selectedPage is required.");
+            }
+            SetProperty(ref _selectedPage, value);
+        }
     }
 
-    private Dictionary<string, string> _pageKeys = new Dictionary<string, string>
+    private readonly Dictionary<string, string> _pageKeys = new()
     {
         { "SettingsPage", "CurticeWinUI.ViewModels.SettingsViewModel" },
         { "NewsfeedPage", "CurticeWinUI.ViewModels.NewsfeedViewModel" }
@@ -110,6 +131,7 @@ public partial class SettingsViewModel : ObservableRecipient
 
     private async Task SetStartupPageAsync(string pageKey)
     {
+
         if (_pageKeys.TryGetValue(pageKey, out var viewModelName))
         {
             StartupPage = viewModelName;

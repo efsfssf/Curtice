@@ -15,7 +15,12 @@ public sealed partial class SettingsPage : Page
     public SettingsPage()
     {
         ViewModel = App.GetService<SettingsViewModel>();
-        ViewModel.InitializeAsync();
+        InitializeAsync();
         InitializeComponent();
+    }
+
+    private async void InitializeAsync()
+    {
+        await ViewModel.InitializeAsync();
     }
 }
