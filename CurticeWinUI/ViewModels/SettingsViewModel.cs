@@ -94,6 +94,8 @@ public partial class SettingsViewModel : ObservableRecipient
                     await _languageService.SetCurrentLanguageAsync(param);
                 }
             });
+
+
     }
 
 
@@ -166,6 +168,7 @@ public partial class SettingsViewModel : ObservableRecipient
         }
 
         _availableLanguages = await _languageService.GetAvailableLanguagesAsync();
+
 
         _selectedLanguage = await _languageService.GetCurrentLanguageAsync();
         SelectedLanguageCombo = _selectedLanguage;

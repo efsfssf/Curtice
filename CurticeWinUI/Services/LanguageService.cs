@@ -10,16 +10,20 @@ namespace CurticeWinUI.Services
     {
         public Task<IEnumerable<string>> GetAvailableLanguagesAsync()
         {
-            return Task.FromResult(ApplicationLanguages.ManifestLanguages.AsEnumerable());
+            var languages = ApplicationLanguages.ManifestLanguages.ToList();
+            languages.Add("System");
+            return Task.FromResult(languages.AsEnumerable());
         }
 
         public Task<string> GetCurrentLanguageAsync()
         {
-            return Task.FromResult(ApplicationLanguages.PrimaryLanguageOverride);
+            return Task.FromResult(ApplicationLanguages.PrimaryLanguageOverride == "" ? "System" : ApplicationLanguages.PrimaryLanguageOverride);
         }
 
         public Task SetCurrentLanguageAsync(string language)
         {
+            if (language == "System")
+                language = "";
             ApplicationLanguages.PrimaryLanguageOverride = language;
             return Task.CompletedTask;
         }
