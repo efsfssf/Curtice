@@ -212,4 +212,10 @@
   <data name="Settings_Language.Text" xml:space="preserve">
     <value>Language</value>
   </data>
+  <data name="MessagerPage" xml:space="preserve">
+    <value>Messager</value>
+  </data>
+  <data name="NewsfeedPage" xml:space="preserve">
+    <value>Newsfeed</value>
+  </data>
 </root>

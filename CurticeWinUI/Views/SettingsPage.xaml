@@ -9,6 +9,7 @@
     mc:Ignorable="d">
     <Page.Resources>
         <helpers:EnumToBooleanConverter x:Key="EnumToBooleanConverter" />
+        <helpers:PageKeyToResourceStringConverter x:Key="PageKeyToResourceStringConverter"/>
     </Page.Resources>
     <Grid>
         <StackPanel
@@ -54,11 +55,11 @@
 
                 <TextBlock x:Uid="Settings_AutoRunPage" />
                 <StackPanel Margin="{StaticResource XSmallTopMargin}">
-                    <DropDownButton Content="{x:Bind ViewModel.SelectedPage, Mode=OneWay}">
+                    <DropDownButton Content="{x:Bind ViewModel.SelectedPage, Mode=OneWay, Converter={StaticResource PageKeyToResourceStringConverter}}">
                         <DropDownButton.Flyout>
                             <MenuFlyout>
-                                <MenuFlyoutItem Text="Newsfeed Page" Command="{x:Bind ViewModel.SetStartupPageCommand}" CommandParameter="NewsfeedPage" />
-                                <MenuFlyoutItem Text="Messager Page" Command="{x:Bind ViewModel.SetStartupPageCommand}" CommandParameter="MessagerPage" />
+                                <MenuFlyoutItem Text="{Binding Converter={StaticResource PageKeyToResourceStringConverter}, Source=NewsfeedPage}" Command="{x:Bind ViewModel.SetStartupPageCommand}" CommandParameter="NewsfeedPage" />
+                                <MenuFlyoutItem Text="{Binding Converter={StaticResource PageKeyToResourceStringConverter}, Source=MessagerPage}" Command="{x:Bind ViewModel.SetStartupPageCommand}" CommandParameter="MessagerPage" />
                                 <!-- Добавьте здесь другие элементы MenuFlyoutItem для каждой страницы -->
                             </MenuFlyout>
                         </DropDownButton.Flyout>

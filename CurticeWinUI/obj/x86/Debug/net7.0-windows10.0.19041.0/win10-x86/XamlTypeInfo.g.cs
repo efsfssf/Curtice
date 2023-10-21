@@ -224,7 +224,7 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[84];
+            _typeNameTable = new string[85];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -270,47 +270,48 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
             _typeNameTable[42] = "CurticeWinUI.Views.PhotosPage";
             _typeNameTable[43] = "CurticeWinUI.ViewModels.PhotosViewModel";
             _typeNameTable[44] = "CurticeWinUI.Helpers.EnumToBooleanConverter";
-            _typeNameTable[45] = "CurticeWinUI.Views.SettingsPage";
-            _typeNameTable[46] = "CurticeWinUI.ViewModels.SettingsViewModel";
-            _typeNameTable[47] = "Microsoft.UI.Xaml.Controls.NavigationView";
-            _typeNameTable[48] = "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible";
-            _typeNameTable[49] = "System.Collections.Generic.IList`1<Object>";
-            _typeNameTable[50] = "Microsoft.UI.Xaml.DataTemplate";
-            _typeNameTable[51] = "Microsoft.UI.Xaml.Controls.AutoSuggestBox";
-            _typeNameTable[52] = "Microsoft.UI.Xaml.UIElement";
-            _typeNameTable[53] = "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode";
-            _typeNameTable[54] = "Microsoft.UI.Xaml.Style";
-            _typeNameTable[55] = "Microsoft.UI.Xaml.Controls.StyleSelector";
-            _typeNameTable[56] = "Microsoft.UI.Xaml.Controls.DataTemplateSelector";
-            _typeNameTable[57] = "Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode";
-            _typeNameTable[58] = "Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode";
-            _typeNameTable[59] = "Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus";
-            _typeNameTable[60] = "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled";
-            _typeNameTable[61] = "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings";
-            _typeNameTable[62] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[63] = "Microsoft.Xaml.Interactivity.Interaction";
-            _typeNameTable[64] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
-            _typeNameTable[65] = "Microsoft.UI.Xaml.DependencyObjectCollection";
-            _typeNameTable[66] = "Microsoft.UI.Xaml.Controls.NavigationViewItem";
-            _typeNameTable[67] = "Microsoft.UI.Xaml.Controls.NavigationViewItemBase";
-            _typeNameTable[68] = "Microsoft.UI.Xaml.Controls.IconElement";
-            _typeNameTable[69] = "Microsoft.UI.Xaml.Controls.InfoBadge";
-            _typeNameTable[70] = "Microsoft.UI.Xaml.Controls.Control";
-            _typeNameTable[71] = "CurticeWinUI.Helpers.NavigationHelper";
-            _typeNameTable[72] = "CurticeWinUI.Behaviors.NavigationViewHeaderBehavior";
-            _typeNameTable[73] = "Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.NavigationView>";
-            _typeNameTable[74] = "Microsoft.Xaml.Interactivity.Behavior";
-            _typeNameTable[75] = "CurticeWinUI.Behaviors.NavigationViewHeaderMode";
-            _typeNameTable[76] = "CurticeWinUI.Views.ShellPage";
-            _typeNameTable[77] = "CurticeWinUI.ViewModels.ShellViewModel";
-            _typeNameTable[78] = "CurticeWinUI.Views.Test1Page";
-            _typeNameTable[79] = "CurticeWinUI.ViewModels.Test1ViewModel";
-            _typeNameTable[80] = "CurticeWinUI.Views.Test2Page";
-            _typeNameTable[81] = "CurticeWinUI.ViewModels.Test2ViewModel";
-            _typeNameTable[82] = "CurticeWinUI.Views.VideosPage";
-            _typeNameTable[83] = "CurticeWinUI.ViewModels.VideosViewModel";
+            _typeNameTable[45] = "CurticeWinUI.Helpers.PageKeyToResourceStringConverter";
+            _typeNameTable[46] = "CurticeWinUI.Views.SettingsPage";
+            _typeNameTable[47] = "CurticeWinUI.ViewModels.SettingsViewModel";
+            _typeNameTable[48] = "Microsoft.UI.Xaml.Controls.NavigationView";
+            _typeNameTable[49] = "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible";
+            _typeNameTable[50] = "System.Collections.Generic.IList`1<Object>";
+            _typeNameTable[51] = "Microsoft.UI.Xaml.DataTemplate";
+            _typeNameTable[52] = "Microsoft.UI.Xaml.Controls.AutoSuggestBox";
+            _typeNameTable[53] = "Microsoft.UI.Xaml.UIElement";
+            _typeNameTable[54] = "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode";
+            _typeNameTable[55] = "Microsoft.UI.Xaml.Style";
+            _typeNameTable[56] = "Microsoft.UI.Xaml.Controls.StyleSelector";
+            _typeNameTable[57] = "Microsoft.UI.Xaml.Controls.DataTemplateSelector";
+            _typeNameTable[58] = "Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode";
+            _typeNameTable[59] = "Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode";
+            _typeNameTable[60] = "Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus";
+            _typeNameTable[61] = "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled";
+            _typeNameTable[62] = "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings";
+            _typeNameTable[63] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[64] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[65] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[66] = "Microsoft.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[67] = "Microsoft.UI.Xaml.Controls.NavigationViewItem";
+            _typeNameTable[68] = "Microsoft.UI.Xaml.Controls.NavigationViewItemBase";
+            _typeNameTable[69] = "Microsoft.UI.Xaml.Controls.IconElement";
+            _typeNameTable[70] = "Microsoft.UI.Xaml.Controls.InfoBadge";
+            _typeNameTable[71] = "Microsoft.UI.Xaml.Controls.Control";
+            _typeNameTable[72] = "CurticeWinUI.Helpers.NavigationHelper";
+            _typeNameTable[73] = "CurticeWinUI.Behaviors.NavigationViewHeaderBehavior";
+            _typeNameTable[74] = "Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.NavigationView>";
+            _typeNameTable[75] = "Microsoft.Xaml.Interactivity.Behavior";
+            _typeNameTable[76] = "CurticeWinUI.Behaviors.NavigationViewHeaderMode";
+            _typeNameTable[77] = "CurticeWinUI.Views.ShellPage";
+            _typeNameTable[78] = "CurticeWinUI.ViewModels.ShellViewModel";
+            _typeNameTable[79] = "CurticeWinUI.Views.Test1Page";
+            _typeNameTable[80] = "CurticeWinUI.ViewModels.Test1ViewModel";
+            _typeNameTable[81] = "CurticeWinUI.Views.Test2Page";
+            _typeNameTable[82] = "CurticeWinUI.ViewModels.Test2ViewModel";
+            _typeNameTable[83] = "CurticeWinUI.Views.VideosPage";
+            _typeNameTable[84] = "CurticeWinUI.ViewModels.VideosViewModel";
 
-            _typeTable = new global::System.Type[84];
+            _typeTable = new global::System.Type[85];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -358,45 +359,46 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
             _typeTable[42] = typeof(global::CurticeWinUI.Views.PhotosPage);
             _typeTable[43] = typeof(global::CurticeWinUI.ViewModels.PhotosViewModel);
             _typeTable[44] = typeof(global::CurticeWinUI.Helpers.EnumToBooleanConverter);
-            _typeTable[45] = typeof(global::CurticeWinUI.Views.SettingsPage);
-            _typeTable[46] = typeof(global::CurticeWinUI.ViewModels.SettingsViewModel);
-            _typeTable[47] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationView);
-            _typeTable[48] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible);
-            _typeTable[49] = typeof(global::System.Collections.Generic.IList<global::System.Object>);
-            _typeTable[50] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
-            _typeTable[51] = typeof(global::Microsoft.UI.Xaml.Controls.AutoSuggestBox);
-            _typeTable[52] = typeof(global::Microsoft.UI.Xaml.UIElement);
-            _typeTable[53] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode);
-            _typeTable[54] = typeof(global::Microsoft.UI.Xaml.Style);
-            _typeTable[55] = typeof(global::Microsoft.UI.Xaml.Controls.StyleSelector);
-            _typeTable[56] = typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector);
-            _typeTable[57] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode);
-            _typeTable[58] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode);
-            _typeTable[59] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus);
-            _typeTable[60] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled);
-            _typeTable[61] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings);
-            _typeTable[62] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[63] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
-            _typeTable[64] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
-            _typeTable[65] = typeof(global::Microsoft.UI.Xaml.DependencyObjectCollection);
-            _typeTable[66] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem);
-            _typeTable[67] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase);
-            _typeTable[68] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
-            _typeTable[69] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge);
-            _typeTable[70] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
-            _typeTable[71] = typeof(global::CurticeWinUI.Helpers.NavigationHelper);
-            _typeTable[72] = typeof(global::CurticeWinUI.Behaviors.NavigationViewHeaderBehavior);
-            _typeTable[73] = typeof(global::Microsoft.Xaml.Interactivity.Behavior<global::Microsoft.UI.Xaml.Controls.NavigationView>);
-            _typeTable[74] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
-            _typeTable[75] = typeof(global::CurticeWinUI.Behaviors.NavigationViewHeaderMode);
-            _typeTable[76] = typeof(global::CurticeWinUI.Views.ShellPage);
-            _typeTable[77] = typeof(global::CurticeWinUI.ViewModels.ShellViewModel);
-            _typeTable[78] = typeof(global::CurticeWinUI.Views.Test1Page);
-            _typeTable[79] = typeof(global::CurticeWinUI.ViewModels.Test1ViewModel);
-            _typeTable[80] = typeof(global::CurticeWinUI.Views.Test2Page);
-            _typeTable[81] = typeof(global::CurticeWinUI.ViewModels.Test2ViewModel);
-            _typeTable[82] = typeof(global::CurticeWinUI.Views.VideosPage);
-            _typeTable[83] = typeof(global::CurticeWinUI.ViewModels.VideosViewModel);
+            _typeTable[45] = typeof(global::CurticeWinUI.Helpers.PageKeyToResourceStringConverter);
+            _typeTable[46] = typeof(global::CurticeWinUI.Views.SettingsPage);
+            _typeTable[47] = typeof(global::CurticeWinUI.ViewModels.SettingsViewModel);
+            _typeTable[48] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationView);
+            _typeTable[49] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible);
+            _typeTable[50] = typeof(global::System.Collections.Generic.IList<global::System.Object>);
+            _typeTable[51] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
+            _typeTable[52] = typeof(global::Microsoft.UI.Xaml.Controls.AutoSuggestBox);
+            _typeTable[53] = typeof(global::Microsoft.UI.Xaml.UIElement);
+            _typeTable[54] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode);
+            _typeTable[55] = typeof(global::Microsoft.UI.Xaml.Style);
+            _typeTable[56] = typeof(global::Microsoft.UI.Xaml.Controls.StyleSelector);
+            _typeTable[57] = typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector);
+            _typeTable[58] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode);
+            _typeTable[59] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode);
+            _typeTable[60] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus);
+            _typeTable[61] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled);
+            _typeTable[62] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings);
+            _typeTable[63] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[64] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[65] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[66] = typeof(global::Microsoft.UI.Xaml.DependencyObjectCollection);
+            _typeTable[67] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem);
+            _typeTable[68] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase);
+            _typeTable[69] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
+            _typeTable[70] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge);
+            _typeTable[71] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
+            _typeTable[72] = typeof(global::CurticeWinUI.Helpers.NavigationHelper);
+            _typeTable[73] = typeof(global::CurticeWinUI.Behaviors.NavigationViewHeaderBehavior);
+            _typeTable[74] = typeof(global::Microsoft.Xaml.Interactivity.Behavior<global::Microsoft.UI.Xaml.Controls.NavigationView>);
+            _typeTable[75] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
+            _typeTable[76] = typeof(global::CurticeWinUI.Behaviors.NavigationViewHeaderMode);
+            _typeTable[77] = typeof(global::CurticeWinUI.Views.ShellPage);
+            _typeTable[78] = typeof(global::CurticeWinUI.ViewModels.ShellViewModel);
+            _typeTable[79] = typeof(global::CurticeWinUI.Views.Test1Page);
+            _typeTable[80] = typeof(global::CurticeWinUI.ViewModels.Test1ViewModel);
+            _typeTable[81] = typeof(global::CurticeWinUI.Views.Test2Page);
+            _typeTable[82] = typeof(global::CurticeWinUI.ViewModels.Test2ViewModel);
+            _typeTable[83] = typeof(global::CurticeWinUI.Views.VideosPage);
+            _typeTable[84] = typeof(global::CurticeWinUI.ViewModels.VideosViewModel);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -453,20 +455,21 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
         private object Activate_42_PhotosPage() { return new global::CurticeWinUI.Views.PhotosPage(); }
         private object Activate_43_PhotosViewModel() { return new global::CurticeWinUI.ViewModels.PhotosViewModel(); }
         private object Activate_44_EnumToBooleanConverter() { return new global::CurticeWinUI.Helpers.EnumToBooleanConverter(); }
-        private object Activate_45_SettingsPage() { return new global::CurticeWinUI.Views.SettingsPage(); }
-        private object Activate_47_NavigationView() { return new global::Microsoft.UI.Xaml.Controls.NavigationView(); }
-        private object Activate_61_NavigationViewTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings(); }
-        private object Activate_64_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_66_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
-        private object Activate_69_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
-        private object Activate_71_NavigationHelper() { return new global::CurticeWinUI.Helpers.NavigationHelper(); }
-        private object Activate_72_NavigationViewHeaderBehavior() { return new global::CurticeWinUI.Behaviors.NavigationViewHeaderBehavior(); }
-        private object Activate_78_Test1Page() { return new global::CurticeWinUI.Views.Test1Page(); }
-        private object Activate_79_Test1ViewModel() { return new global::CurticeWinUI.ViewModels.Test1ViewModel(); }
-        private object Activate_80_Test2Page() { return new global::CurticeWinUI.Views.Test2Page(); }
-        private object Activate_81_Test2ViewModel() { return new global::CurticeWinUI.ViewModels.Test2ViewModel(); }
-        private object Activate_82_VideosPage() { return new global::CurticeWinUI.Views.VideosPage(); }
-        private object Activate_83_VideosViewModel() { return new global::CurticeWinUI.ViewModels.VideosViewModel(); }
+        private object Activate_45_PageKeyToResourceStringConverter() { return new global::CurticeWinUI.Helpers.PageKeyToResourceStringConverter(); }
+        private object Activate_46_SettingsPage() { return new global::CurticeWinUI.Views.SettingsPage(); }
+        private object Activate_48_NavigationView() { return new global::Microsoft.UI.Xaml.Controls.NavigationView(); }
+        private object Activate_62_NavigationViewTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings(); }
+        private object Activate_65_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_67_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
+        private object Activate_70_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
+        private object Activate_72_NavigationHelper() { return new global::CurticeWinUI.Helpers.NavigationHelper(); }
+        private object Activate_73_NavigationViewHeaderBehavior() { return new global::CurticeWinUI.Behaviors.NavigationViewHeaderBehavior(); }
+        private object Activate_79_Test1Page() { return new global::CurticeWinUI.Views.Test1Page(); }
+        private object Activate_80_Test1ViewModel() { return new global::CurticeWinUI.ViewModels.Test1ViewModel(); }
+        private object Activate_81_Test2Page() { return new global::CurticeWinUI.Views.Test2Page(); }
+        private object Activate_82_Test2ViewModel() { return new global::CurticeWinUI.ViewModels.Test2ViewModel(); }
+        private object Activate_83_VideosPage() { return new global::CurticeWinUI.Views.VideosPage(); }
+        private object Activate_84_VideosViewModel() { return new global::CurticeWinUI.ViewModels.VideosViewModel(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -474,13 +477,13 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
         }
-        private void VectorAdd_49_IList(object instance, object item)
+        private void VectorAdd_50_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
             var newItem = (global::System.Object)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_64_BehaviorCollection(object instance, object item)
+        private void VectorAdd_65_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Microsoft.UI.Xaml.DependencyObject)item;
@@ -803,24 +806,31 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 45:   //  CurticeWinUI.Views.SettingsPage
+            case 45:   //  CurticeWinUI.Helpers.PageKeyToResourceStringConverter
+                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_45_PageKeyToResourceStringConverter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 46:   //  CurticeWinUI.Views.SettingsPage
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_45_SettingsPage;
+                userType.Activator = Activate_46_SettingsPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 46:   //  CurticeWinUI.ViewModels.SettingsViewModel
+            case 47:   //  CurticeWinUI.ViewModels.SettingsViewModel
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 47:   //  Microsoft.UI.Xaml.Controls.NavigationView
+            case 48:   //  Microsoft.UI.Xaml.Controls.NavigationView
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_47_NavigationView;
+                userType.Activator = Activate_48_NavigationView;
                 userType.AddMemberName("IsBackButtonVisible");
                 userType.AddMemberName("IsBackEnabled");
                 userType.AddMemberName("SelectedItem");
@@ -861,7 +871,7 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 48:   //  Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible
+            case 49:   //  Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Collapsed", global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible.Collapsed);
                 userType.AddEnumValue("Visible", global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible.Visible);
@@ -869,26 +879,26 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 49:   //  System.Collections.Generic.IList`1<Object>
+            case 50:   //  System.Collections.Generic.IList`1<Object>
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_49_IList;
+                userType.CollectionAdd = VectorAdd_50_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 50:   //  Microsoft.UI.Xaml.DataTemplate
+            case 51:   //  Microsoft.UI.Xaml.DataTemplate
                 xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 51:   //  Microsoft.UI.Xaml.Controls.AutoSuggestBox
+            case 52:   //  Microsoft.UI.Xaml.Controls.AutoSuggestBox
                 xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 52:   //  Microsoft.UI.Xaml.UIElement
+            case 53:   //  Microsoft.UI.Xaml.UIElement
                 xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 53:   //  Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode
+            case 54:   //  Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Minimal", global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode.Minimal);
                 userType.AddEnumValue("Compact", global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode.Compact);
@@ -896,26 +906,26 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 54:   //  Microsoft.UI.Xaml.Style
+            case 55:   //  Microsoft.UI.Xaml.Style
                 xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 55:   //  Microsoft.UI.Xaml.Controls.StyleSelector
+            case 56:   //  Microsoft.UI.Xaml.Controls.StyleSelector
                 xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 56:   //  Microsoft.UI.Xaml.Controls.DataTemplateSelector
+            case 57:   //  Microsoft.UI.Xaml.Controls.DataTemplateSelector
                 xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 57:   //  Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode
+            case 58:   //  Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("MoreLabel", global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode.MoreLabel);
                 userType.AddEnumValue("NoLabel", global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode.NoLabel);
                 xamlType = userType;
                 break;
 
-            case 58:   //  Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode
+            case 59:   //  Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode.Auto);
                 userType.AddEnumValue("Left", global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode.Left);
@@ -925,14 +935,14 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 59:   //  Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus
+            case 60:   //  Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus.Disabled);
                 userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus.Enabled);
                 xamlType = userType;
                 break;
 
-            case 60:   //  Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled
+            case 61:   //  Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("WhenSelectionFollowsFocus", global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled.WhenSelectionFollowsFocus);
                 userType.AddEnumValue("Always", global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled.Always);
@@ -940,36 +950,36 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 61:   //  Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings
+            case 62:   //  Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 62:   //  Microsoft.UI.Xaml.DependencyObject
+            case 63:   //  Microsoft.UI.Xaml.DependencyObject
                 xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 63:   //  Microsoft.Xaml.Interactivity.Interaction
+            case 64:   //  Microsoft.Xaml.Interactivity.Interaction
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 64:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+            case 65:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_64_BehaviorCollection;
+                userType.CollectionAdd = VectorAdd_65_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 65:   //  Microsoft.UI.Xaml.DependencyObjectCollection
+            case 66:   //  Microsoft.UI.Xaml.DependencyObjectCollection
                 xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 66:   //  Microsoft.UI.Xaml.Controls.NavigationViewItem
+            case 67:   //  Microsoft.UI.Xaml.Controls.NavigationViewItem
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItemBase"));
-                userType.Activator = Activate_66_NavigationViewItem;
+                userType.Activator = Activate_67_NavigationViewItem;
                 userType.AddMemberName("Icon");
                 userType.AddMemberName("CompactPaneLength");
                 userType.AddMemberName("HasUnrealizedChildren");
@@ -982,37 +992,37 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 67:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemBase
+            case 68:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemBase
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
                 userType.AddMemberName("IsSelected");
                 xamlType = userType;
                 break;
 
-            case 68:   //  Microsoft.UI.Xaml.Controls.IconElement
+            case 69:   //  Microsoft.UI.Xaml.Controls.IconElement
                 xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 69:   //  Microsoft.UI.Xaml.Controls.InfoBadge
+            case 70:   //  Microsoft.UI.Xaml.Controls.InfoBadge
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 70:   //  Microsoft.UI.Xaml.Controls.Control
+            case 71:   //  Microsoft.UI.Xaml.Controls.Control
                 xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 71:   //  CurticeWinUI.Helpers.NavigationHelper
+            case 72:   //  CurticeWinUI.Helpers.NavigationHelper
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_71_NavigationHelper;
+                userType.Activator = Activate_72_NavigationHelper;
                 userType.AddMemberName("NavigateTo");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 72:   //  CurticeWinUI.Behaviors.NavigationViewHeaderBehavior
+            case 73:   //  CurticeWinUI.Behaviors.NavigationViewHeaderBehavior
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.NavigationView>"));
-                userType.Activator = Activate_72_NavigationViewHeaderBehavior;
+                userType.Activator = Activate_73_NavigationViewHeaderBehavior;
                 userType.AddMemberName("DefaultHeader");
                 userType.AddMemberName("DefaultHeaderTemplate");
                 userType.AddMemberName("HeaderMode");
@@ -1022,18 +1032,18 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 73:   //  Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.NavigationView>
+            case 74:   //  Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.NavigationView>
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior"));
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 74:   //  Microsoft.Xaml.Interactivity.Behavior
+            case 75:   //  Microsoft.Xaml.Interactivity.Behavior
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
                 xamlType = userType;
                 break;
 
-            case 75:   //  CurticeWinUI.Behaviors.NavigationViewHeaderMode
+            case 76:   //  CurticeWinUI.Behaviors.NavigationViewHeaderMode
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Always", global::CurticeWinUI.Behaviors.NavigationViewHeaderMode.Always);
                 userType.AddEnumValue("Never", global::CurticeWinUI.Behaviors.NavigationViewHeaderMode.Never);
@@ -1042,59 +1052,59 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 76:   //  CurticeWinUI.Views.ShellPage
+            case 77:   //  CurticeWinUI.Views.ShellPage
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 77:   //  CurticeWinUI.ViewModels.ShellViewModel
+            case 78:   //  CurticeWinUI.ViewModels.ShellViewModel
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 78:   //  CurticeWinUI.Views.Test1Page
+            case 79:   //  CurticeWinUI.Views.Test1Page
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_78_Test1Page;
+                userType.Activator = Activate_79_Test1Page;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 79:   //  CurticeWinUI.ViewModels.Test1ViewModel
+            case 80:   //  CurticeWinUI.ViewModels.Test1ViewModel
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 80:   //  CurticeWinUI.Views.Test2Page
+            case 81:   //  CurticeWinUI.Views.Test2Page
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_80_Test2Page;
+                userType.Activator = Activate_81_Test2Page;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 81:   //  CurticeWinUI.ViewModels.Test2ViewModel
+            case 82:   //  CurticeWinUI.ViewModels.Test2ViewModel
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 82:   //  CurticeWinUI.Views.VideosPage
+            case 83:   //  CurticeWinUI.Views.VideosPage
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_82_VideosPage;
+                userType.Activator = Activate_83_VideosPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 83:   //  CurticeWinUI.ViewModels.VideosViewModel
+            case 84:   //  CurticeWinUI.ViewModels.VideosViewModel
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();

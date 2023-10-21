@@ -9,6 +9,7 @@
     mc:Ignorable="d">
     <Page.Resources>
         <helpers:EnumToBooleanConverter x:Key="EnumToBooleanConverter" />
+        <helpers:PageKeyToResourceStringConverter x:Key="PageKeyToResourceStringConverter"/>
     </Page.Resources>
     <Grid>
         <StackPanel x:ConnectionId='2'
@@ -54,11 +55,11 @@
 
                 <TextBlock x:Uid="Settings_AutoRunPage" />
                 <StackPanel Margin="{StaticResource XSmallTopMargin}">
-                    <DropDownButton x:ConnectionId='7'                                                       >
+                    <DropDownButton x:ConnectionId='7'                                                                                                                    >
                         <DropDownButton.Flyout>
                             <MenuFlyout>
-                                <MenuFlyoutItem x:ConnectionId='8' Text="Newsfeed Page"                                                    CommandParameter="NewsfeedPage" />
-                                <MenuFlyoutItem x:ConnectionId='9' Text="Messager Page"                                                    CommandParameter="MessagerPage" />
+                                <MenuFlyoutItem x:ConnectionId='8' Text="{Binding Converter={StaticResource PageKeyToResourceStringConverter}, Source=NewsfeedPage}"                                                    CommandParameter="NewsfeedPage" />
+                                <MenuFlyoutItem x:ConnectionId='9' Text="{Binding Converter={StaticResource PageKeyToResourceStringConverter}, Source=MessagerPage}"                                                    CommandParameter="MessagerPage" />
                                 <!-- Добавьте здесь другие элементы MenuFlyoutItem для каждой страницы -->
                             </MenuFlyout>
                         </DropDownButton.Flyout>
