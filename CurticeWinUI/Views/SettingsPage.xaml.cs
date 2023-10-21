@@ -19,6 +19,8 @@ public sealed partial class SettingsPage : Page
         InitializeComponent();
     }
 
+    
+
     private async void InitializeAsync()
     {
         await ViewModel.InitializeAsync();

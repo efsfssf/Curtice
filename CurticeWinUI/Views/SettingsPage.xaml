@@ -61,6 +61,19 @@
                 </DropDownButton.Flyout>
             </DropDownButton>
 
+            <ComboBox SelectedItem="{x:Bind ViewModel.SelectedLanguageCombo, Mode=TwoWay}" 
+                ItemsSource="{x:Bind ViewModel.AvailableLanguages}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate x:DataType="x:String">
+                        <TextBlock Text="{x:Bind}" />
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+
+
+
+
+
 
 
             <TextBlock x:Uid="Settings_About" Style="{ThemeResource SubtitleTextBlockStyle}" />

@@ -18,7 +18,7 @@
                 <TextBlock x:Uid="Settings_Theme" />
 
                 <StackPanel Margin="{StaticResource XSmallTopMargin}">
-                    <RadioButton x:ConnectionId='7'
+                    <RadioButton x:ConnectionId='10'
                         x:Uid="Settings_Theme_Light"
                                                                        
                                                                                                                                                              
@@ -28,7 +28,7 @@
                             <xaml:ElementTheme>Light</xaml:ElementTheme>
                         </RadioButton.CommandParameter>
                     </RadioButton>
-                    <RadioButton x:ConnectionId='8'
+                    <RadioButton x:ConnectionId='11'
                         x:Uid="Settings_Theme_Dark"
                                                                        
                                                                                                                                                             
@@ -38,7 +38,7 @@
                             <xaml:ElementTheme>Dark</xaml:ElementTheme>
                         </RadioButton.CommandParameter>
                     </RadioButton>
-                    <RadioButton x:ConnectionId='9'
+                    <RadioButton x:ConnectionId='12'
                         x:Uid="Settings_Theme_Default"
                                                                        
                                                                                                                                                                
@@ -54,19 +54,32 @@
             <DropDownButton x:ConnectionId='3'                                                       >
                 <DropDownButton.Flyout>
                     <MenuFlyout>
-                        <MenuFlyoutItem x:ConnectionId='5' Text="Newsfeed Page"                                                    CommandParameter="NewsfeedPage" />
-                        <MenuFlyoutItem x:ConnectionId='6' Text="Settings Page"                                                    CommandParameter="SettingsPage" />
+                        <MenuFlyoutItem x:ConnectionId='8' Text="Newsfeed Page"                                                    CommandParameter="NewsfeedPage" />
+                        <MenuFlyoutItem x:ConnectionId='9' Text="Settings Page"                                                    CommandParameter="SettingsPage" />
                         <!-- Добавьте здесь другие элементы MenuFlyoutItem для каждой страницы -->
                     </MenuFlyout>
                 </DropDownButton.Flyout>
             </DropDownButton>
+
+            <ComboBox x:ConnectionId='4'                                                                      
+                                                                   >
+                <ComboBox.ItemTemplate>
+                    <DataTemplate                      >
+                        <TextBlock x:ConnectionId='7'                 />
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+
+
+
+
 
 
 
             <TextBlock x:Uid="Settings_About" Style="{ThemeResource SubtitleTextBlockStyle}" />
 
             <StackPanel Margin="{StaticResource XSmallTopMargin}">
-                <TextBlock x:ConnectionId='4'                                                           Style="{ThemeResource BodyTextBlockStyle}" />
+                <TextBlock x:ConnectionId='5'                                                           Style="{ThemeResource BodyTextBlockStyle}" />
 
                 <TextBlock
                     x:Uid="Settings_AboutDescription"

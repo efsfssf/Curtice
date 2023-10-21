@@ -6,15 +6,41 @@ using CommunityToolkit.Mvvm.Input;
 
 using CurticeWinUI.Contracts.Services;
 using CurticeWinUI.Helpers;
+using CurticeWinUI.Services;
 using Microsoft.UI.Xaml;
-
+using Microsoft.UI.Xaml.Controls;
 using Windows.ApplicationModel;
 
 namespace CurticeWinUI.ViewModels;
 
 public partial class SettingsViewModel : ObservableRecipient
 {
+    
     private readonly IThemeSelectorService _themeSelectorService;
+    private readonly ILanguageService _languageService;
+
+    [ObservableProperty]
+    private string _selectedLanguage;
+
+    private string _selectedLanguageCombo;
+
+    public string SelectedLanguageCombo
+    {
+        get
+        {
+            return _selectedLanguageCombo;
+        }
+        set
+        {
+            _selectedLanguageCombo = value;
+            // Выполняйте команду при изменении выбранного элемента
+            SwitchLanguageCommand.Execute(SelectedLanguageCombo);
+        }
+    }
+
+    [ObservableProperty]
+    private IEnumerable<string> _availableLanguages;
+
 
     [ObservableProperty]
     private ElementTheme _elementTheme;
@@ -27,22 +53,27 @@ public partial class SettingsViewModel : ObservableRecipient
         get;
     }
     private readonly ILocalSettingsService _localSettingsService;
+    public ICommand SwitchLanguageCommand
+    {
+        get;
+    }
 
-    public SettingsViewModel(IThemeSelectorService themeSelectorService, ILocalSettingsService localSettingsService)
+    public SettingsViewModel(IThemeSelectorService themeSelectorService, ILocalSettingsService localSettingsService, ILanguageService languageService)
     {
         _themeSelectorService = themeSelectorService;
         _localSettingsService = localSettingsService;
+        _languageService = languageService;
         SelectedPage = StartupPage;
         _elementTheme = _themeSelectorService.Theme;
         _versionDescription = GetVersionDescription();
 
-        SetStartupPageCommand = new RelayCommand<string>(async(pageKey) =>{
+        SetStartupPageCommand = new RelayCommand<string>(async (pageKey) => {
             if (pageKey == null)
             {
                 throw new ArgumentNullException(nameof(pageKey));
             }
-            await SetStartupPageAsync(pageKey); 
-        } );
+            await SetStartupPageAsync(pageKey);
+        });
 
         SwitchThemeCommand = new RelayCommand<ElementTheme>(
             async (param) =>
@@ -54,8 +85,17 @@ public partial class SettingsViewModel : ObservableRecipient
                 }
             });
 
-        
+        SwitchLanguageCommand = new RelayCommand<string>(
+            async (param) =>
+            {
+                if (_selectedLanguage != param)
+                {
+                    _selectedLanguage = param;
+                    await _languageService.SetCurrentLanguageAsync(param);
+                }
+            });
     }
+
 
     private static string GetVersionDescription()
     {
@@ -100,10 +140,7 @@ public partial class SettingsViewModel : ObservableRecipient
         get => _selectedPage;
         set
         {
-            if (value == null)
-            {
-                throw new ArgumentNullException("_selectedPage is required.");
-            }
+            
             SetProperty(ref _selectedPage, value);
         }
     }
@@ -126,6 +163,10 @@ public partial class SettingsViewModel : ObservableRecipient
                 break;
             }
         }
+
+        _availableLanguages = await _languageService.GetAvailableLanguagesAsync();
+
+        _selectedLanguage = await _languageService.GetCurrentLanguageAsync();
     }
 
 
@@ -139,6 +180,9 @@ public partial class SettingsViewModel : ObservableRecipient
             await _localSettingsService.SetStartupPageAsync(viewModelName);
         }
     }
+
+    
+
 
 
 }
