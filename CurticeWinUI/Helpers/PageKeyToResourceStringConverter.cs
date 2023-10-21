@@ -12,7 +12,10 @@ internal class PageKeyToResourceStringConverter : IValueConverter
     public object Convert(object value, Type targetType, object parameter, string language)
     {
         var pageKey = (string)value;
+        if (pageKey == null)
+            return "";
         return ResourceLoader.GetForViewIndependentUse().GetString(pageKey);
+
 
     }
 

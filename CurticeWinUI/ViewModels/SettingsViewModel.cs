@@ -15,7 +15,7 @@ namespace CurticeWinUI.ViewModels;
 
 public partial class SettingsViewModel : ObservableRecipient
 {
-    
+
     private readonly IThemeSelectorService _themeSelectorService;
     private readonly ILanguageService _languageService;
 
@@ -95,7 +95,7 @@ public partial class SettingsViewModel : ObservableRecipient
                 }
             });
 
-
+        InitializeAsync();
     }
 
 
@@ -142,7 +142,7 @@ public partial class SettingsViewModel : ObservableRecipient
         get => _selectedPage;
         set
         {
-            
+
             SetProperty(ref _selectedPage, value);
         }
     }
@@ -186,7 +186,7 @@ public partial class SettingsViewModel : ObservableRecipient
         }
     }
 
-    
+
 
 
 
