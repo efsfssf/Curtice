@@ -49,26 +49,37 @@
                         </RadioButton.CommandParameter>
                     </RadioButton>
                 </StackPanel>
+
+
+
+                <TextBlock x:Uid="Settings_AutoRunPage" />
+                <StackPanel Margin="{StaticResource XSmallTopMargin}">
+                    <DropDownButton Content="{x:Bind ViewModel.SelectedPage, Mode=OneWay}">
+                        <DropDownButton.Flyout>
+                            <MenuFlyout>
+                                <MenuFlyoutItem Text="Newsfeed Page" Command="{x:Bind ViewModel.SetStartupPageCommand}" CommandParameter="NewsfeedPage" />
+                                <MenuFlyoutItem Text="Messager Page" Command="{x:Bind ViewModel.SetStartupPageCommand}" CommandParameter="MessagerPage" />
+                                <!-- Добавьте здесь другие элементы MenuFlyoutItem для каждой страницы -->
+                            </MenuFlyout>
+                        </DropDownButton.Flyout>
+                    </DropDownButton>
+                </StackPanel>
+
+                <TextBlock x:Uid="Settings_Language" />
+                <StackPanel Margin="{StaticResource XSmallTopMargin}">
+                    <ComboBox SelectedItem="{x:Bind ViewModel.SelectedLanguageCombo, Mode=TwoWay}" 
+                        ItemsSource="{x:Bind ViewModel.AvailableLanguages}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate x:DataType="x:String">
+                                <TextBlock Text="{x:Bind}" />
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </StackPanel>
+
             </StackPanel>
 
-            <DropDownButton Content="{x:Bind ViewModel.SelectedPage, Mode=TwoWay}">
-                <DropDownButton.Flyout>
-                    <MenuFlyout>
-                        <MenuFlyoutItem Text="Newsfeed Page" Command="{x:Bind ViewModel.SetStartupPageCommand}" CommandParameter="NewsfeedPage" />
-                        <MenuFlyoutItem Text="Settings Page" Command="{x:Bind ViewModel.SetStartupPageCommand}" CommandParameter="SettingsPage" />
-                        <!-- Добавьте здесь другие элементы MenuFlyoutItem для каждой страницы -->
-                    </MenuFlyout>
-                </DropDownButton.Flyout>
-            </DropDownButton>
-
-            <ComboBox SelectedItem="{x:Bind ViewModel.SelectedLanguageCombo, Mode=TwoWay}" 
-                ItemsSource="{x:Bind ViewModel.AvailableLanguages}">
-                <ComboBox.ItemTemplate>
-                    <DataTemplate x:DataType="x:String">
-                        <TextBlock Text="{x:Bind}" />
-                    </DataTemplate>
-                </ComboBox.ItemTemplate>
-            </ComboBox>
+            
 
 
 

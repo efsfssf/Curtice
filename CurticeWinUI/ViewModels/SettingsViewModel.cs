@@ -148,6 +148,7 @@ public partial class SettingsViewModel : ObservableRecipient
     private readonly Dictionary<string, string> _pageKeys = new()
     {
         { "SettingsPage", "CurticeWinUI.ViewModels.SettingsViewModel" },
+        { "MessagerPage", "CurticeWinUI.ViewModels.MessagerViewModel" },
         { "NewsfeedPage", "CurticeWinUI.ViewModels.NewsfeedViewModel" }
         // добавьте здесь другие страницы
     };
@@ -167,6 +168,7 @@ public partial class SettingsViewModel : ObservableRecipient
         _availableLanguages = await _languageService.GetAvailableLanguagesAsync();
 
         _selectedLanguage = await _languageService.GetCurrentLanguageAsync();
+        SelectedLanguageCombo = _selectedLanguage;
     }
 
 

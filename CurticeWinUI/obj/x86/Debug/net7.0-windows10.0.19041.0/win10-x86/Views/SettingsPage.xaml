@@ -49,26 +49,37 @@
                         </RadioButton.CommandParameter>
                     </RadioButton>
                 </StackPanel>
+
+
+
+                <TextBlock x:Uid="Settings_AutoRunPage" />
+                <StackPanel Margin="{StaticResource XSmallTopMargin}">
+                    <DropDownButton x:ConnectionId='7'                                                       >
+                        <DropDownButton.Flyout>
+                            <MenuFlyout>
+                                <MenuFlyoutItem x:ConnectionId='8' Text="Newsfeed Page"                                                    CommandParameter="NewsfeedPage" />
+                                <MenuFlyoutItem x:ConnectionId='9' Text="Messager Page"                                                    CommandParameter="MessagerPage" />
+                                <!-- Добавьте здесь другие элементы MenuFlyoutItem для каждой страницы -->
+                            </MenuFlyout>
+                        </DropDownButton.Flyout>
+                    </DropDownButton>
+                </StackPanel>
+
+                <TextBlock x:Uid="Settings_Language" />
+                <StackPanel Margin="{StaticResource XSmallTopMargin}">
+                    <ComboBox x:ConnectionId='4'                                                                      
+                                                                           >
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate                      >
+                                <TextBlock x:ConnectionId='6'                 />
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </StackPanel>
+
             </StackPanel>
 
-            <DropDownButton x:ConnectionId='3'                                                       >
-                <DropDownButton.Flyout>
-                    <MenuFlyout>
-                        <MenuFlyoutItem x:ConnectionId='8' Text="Newsfeed Page"                                                    CommandParameter="NewsfeedPage" />
-                        <MenuFlyoutItem x:ConnectionId='9' Text="Settings Page"                                                    CommandParameter="SettingsPage" />
-                        <!-- Добавьте здесь другие элементы MenuFlyoutItem для каждой страницы -->
-                    </MenuFlyout>
-                </DropDownButton.Flyout>
-            </DropDownButton>
-
-            <ComboBox x:ConnectionId='4'                                                                      
-                                                                   >
-                <ComboBox.ItemTemplate>
-                    <DataTemplate                      >
-                        <TextBlock x:ConnectionId='7'                 />
-                    </DataTemplate>
-                </ComboBox.ItemTemplate>
-            </ComboBox>
+            
 
 
 
@@ -79,7 +90,7 @@
             <TextBlock x:Uid="Settings_About" Style="{ThemeResource SubtitleTextBlockStyle}" />
 
             <StackPanel Margin="{StaticResource XSmallTopMargin}">
-                <TextBlock x:ConnectionId='5'                                                           Style="{ThemeResource BodyTextBlockStyle}" />
+                <TextBlock x:ConnectionId='3'                                                           Style="{ThemeResource BodyTextBlockStyle}" />
 
                 <TextBlock
                     x:Uid="Settings_AboutDescription"

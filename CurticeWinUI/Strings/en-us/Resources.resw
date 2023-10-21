@@ -206,4 +206,10 @@
   <data name="Language_Russian" xml:space="preserve">
     <value>Russian</value>
   </data>
+  <data name="Settings_AutoRunPage.Text" xml:space="preserve">
+    <value>Start Page</value>
+  </data>
+  <data name="Settings_Language.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
 </root>
