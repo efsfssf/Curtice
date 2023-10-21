@@ -20,16 +20,19 @@ public partial class SettingsViewModel : ObservableRecipient
     private readonly ILanguageService _languageService;
 
     [ObservableProperty]
-    private string _selectedLanguage;
+    private string? _selectedLanguage;
 
-    private string _selectedLanguageCombo;
+    private string? _selectedLanguageCombo;
 
     public string SelectedLanguageCombo
     {
         get
         {
+            if (_selectedLanguageCombo == null)
+                return string.Empty;
             return _selectedLanguageCombo;
         }
+
         set
         {
             _selectedLanguageCombo = value;
@@ -39,7 +42,7 @@ public partial class SettingsViewModel : ObservableRecipient
     }
 
     [ObservableProperty]
-    private IEnumerable<string> _availableLanguages;
+    private IEnumerable<string>? _availableLanguages;
 
 
     [ObservableProperty]
@@ -88,14 +91,16 @@ public partial class SettingsViewModel : ObservableRecipient
         SwitchLanguageCommand = new RelayCommand<string>(
             async (param) =>
             {
-                if (_selectedLanguage != param)
+                if (_selectedLanguage != param && param != null)
                 {
                     _selectedLanguage = param;
                     await _languageService.SetCurrentLanguageAsync(param);
                 }
             });
 
+#pragma warning disable CS4014 // Так как этот вызов не ожидается, выполнение существующего метода продолжается до тех пор, пока вызов не будет завершен
         InitializeAsync();
+#pragma warning restore CS4014 // Так как этот вызов не ожидается, выполнение существующего метода продолжается до тех пор, пока вызов не будет завершен
     }
 
 
@@ -140,11 +145,7 @@ public partial class SettingsViewModel : ObservableRecipient
     public string SelectedPage
     {
         get => _selectedPage;
-        set
-        {
-
-            SetProperty(ref _selectedPage, value);
-        }
+        set => SetProperty(ref _selectedPage, value);
     }
 
     private readonly Dictionary<string, string> _pageKeys = new()
@@ -167,11 +168,11 @@ public partial class SettingsViewModel : ObservableRecipient
             }
         }
 
-        _availableLanguages = await _languageService.GetAvailableLanguagesAsync();
+        AvailableLanguages = await _languageService.GetAvailableLanguagesAsync();
 
 
-        _selectedLanguage = await _languageService.GetCurrentLanguageAsync();
-        SelectedLanguageCombo = _selectedLanguage;
+        SelectedLanguage = await _languageService.GetCurrentLanguageAsync();
+        SelectedLanguageCombo = SelectedLanguage;
     }
 
 
