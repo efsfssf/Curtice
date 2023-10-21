@@ -14,9 +14,12 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/> <!--Column Chat Contact List-->
-            <ColumnDefinition/> <!--Conversation Area-->
-            <ColumnDefinition Width="Auto"/> <!--Profile Info-->
+            <ColumnDefinition Width="Auto"/>
+            <!--Column Chat Contact List-->
+            <ColumnDefinition/>
+            <!--Conversation Area-->
+            <ColumnDefinition Width="*"/>
+            <!--Profile Info-->
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Row="1" MinWidth="406">
@@ -27,13 +30,17 @@
                 <!--Chats List-->
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            
+
+            <!--Панель с поиском и доп кнопкой создания беседы-->
+
+            <!--BorderBrush="White" BorderThickness="1"-->
             <Grid
                 Grid.Row="0"
+                Margin="6"
                 >
                 <Grid.ColumnDefinitions>
                     <!--Search-->
-                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
                     <!--More Options Button-->
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
@@ -48,9 +55,52 @@
                 </DropDownButton>
             </Grid>
 
-            
+            <Grid
+                Grid.Row="1"
+                >
+                <ListView Grid.Column="0" ItemsSource="{x:Bind ViewModel.Dialogs}" 
+                    SelectedItem="{x:Bind ViewModel.SelectedDialog, Mode=TwoWay}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="models:Dialog">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <PersonPicture ProfilePicture="{x:Bind Avatar}" Grid.RowSpan="2" Width ="32" Height="32" Margin="6" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                <TextBlock Grid.Column="1"
+                                   Text="{x:Bind Name}"
+                                   x:Phase="1"
+                                   Style="{ThemeResource BaseTextBlockStyle}"
+                                   Margin="12,6,0,0"/>
+                                <TextBlock Grid.Column="2"
+                                   Grid.ColumnSpan="2"
+                                   Text="{x:Bind LastMessageTime}"
+                                   x:Phase="1"
+                                   Style="{ThemeResource BodyTextBlockStyle}"
+                                   Margin="12,6,0,0"
+                                   HorizontalAlignment="Right"/>
+                                <TextBlock Grid.Column="1"
+                                   Grid.Row="1"
+                                   Text="{x:Bind LastMessage}"
+                                   x:Phase="2"
+                                   Style="{ThemeResource BodyTextBlockStyle}"
+                                   Margin="12,0,0,6"/>
+                                <InfoBadge x:Name="infoBadge1" Value="5" Opacity="1" Grid.Column ="3" Grid.Row ="1"  HorizontalAlignment="Right" Margin="0,0,0,6"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
+            </Grid>
         </Grid>
 
-        
+
     </Grid>
 </Page>

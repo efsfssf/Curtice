@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Linq;
 using CommunityToolkit.Mvvm.Input;
 using System.Diagnostics.CodeAnalysis;
+using Microsoft.UI.Xaml.Media.Imaging;
 
 namespace CurticeWinUI.ViewModels;
 
@@ -101,16 +102,18 @@ public class MessagerViewModel : ObservableRecipient
         {
             new Dialog
             {
-                Avatar = "avatar1.png",
+                Avatar = "https://sun70-1.userapi.com/impf/3OhLINnHeUU5AcPrUWIRnlROMVsENVk-ooAkiQ/fmc4r1Gy1No.jpg?quality=96&as=50x50,100x100,200x200,400x400&sign=89312ba8d72343853abcc9465bd06b6e&u=K0aS-GTXBoWnULSQ827F4s5OaR9sZwX42fh0C9XAAIg&cs=200x200",
                 Name = "Паша Корчевников",
                 LastMessage = "Привет. Как дела?",
+                LastMessageTime = "2 часа назад",
                 UnreadCount = 0
             },
             new Dialog
             {
-                Avatar = "avatar2.png",
+                Avatar = "https://sun70-1.userapi.com/impf/3OhLINnHeUU5AcPrUWIRnlROMVsENVk-ooAkiQ/fmc4r1Gy1No.jpg?quality=96&as=50x50,100x100,200x200,400x400&sign=89312ba8d72343853abcc9465bd06b6e&u=K0aS-GTXBoWnULSQ827F4s5OaR9sZwX42fh0C9XAAIg&cs=200x200",
                 Name = "Маша Наумова",
                 LastMessage = "Когда гулять?",
+                LastMessageTime = "Только что",
                 UnreadCount = 0
             }
         };
