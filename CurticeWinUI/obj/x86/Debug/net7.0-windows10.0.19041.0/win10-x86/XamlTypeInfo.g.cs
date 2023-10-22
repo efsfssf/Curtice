@@ -244,30 +244,30 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
             _typeNameTable[16] = "Microsoft.UI.Xaml.Media.SystemBackdrop";
             _typeNameTable[17] = "Microsoft.UI.Composition.SystemBackdrops.MicaKind";
             _typeNameTable[18] = "CurticeWinUI.MainWindow";
-            _typeNameTable[19] = "Microsoft.UI.Xaml.Thickness";
-            _typeNameTable[20] = "Microsoft.UI.Xaml.CornerRadius";
-            _typeNameTable[21] = "CurticeWinUI.Views.BookmarksPage";
-            _typeNameTable[22] = "Microsoft.UI.Xaml.Controls.Page";
-            _typeNameTable[23] = "Microsoft.UI.Xaml.Controls.UserControl";
-            _typeNameTable[24] = "CurticeWinUI.ViewModels.BookmarksViewModel";
-            _typeNameTable[25] = "CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient";
-            _typeNameTable[26] = "CommunityToolkit.Mvvm.ComponentModel.ObservableObject";
-            _typeNameTable[27] = "CurticeWinUI.Views.FriendsPage";
-            _typeNameTable[28] = "CurticeWinUI.ViewModels.FriendsViewModel";
-            _typeNameTable[29] = "CurticeWinUI.Views.GroupsPage";
-            _typeNameTable[30] = "CurticeWinUI.ViewModels.GroupsViewModel";
-            _typeNameTable[31] = "Microsoft.UI.Xaml.Controls.PersonPicture";
-            _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.Control";
-            _typeNameTable[33] = "Microsoft.UI.Xaml.Media.ImageSource";
-            _typeNameTable[34] = "Int32";
-            _typeNameTable[35] = "Windows.ApplicationModel.Contacts.Contact";
-            _typeNameTable[36] = "Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings";
-            _typeNameTable[37] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[38] = "Microsoft.UI.Xaml.Controls.InfoBadge";
-            _typeNameTable[39] = "Microsoft.UI.Xaml.Controls.IconSource";
-            _typeNameTable[40] = "Microsoft.UI.Xaml.Controls.InfoBadgeTemplateSettings";
-            _typeNameTable[41] = "Microsoft.UI.Xaml.Controls.DropDownButton";
-            _typeNameTable[42] = "Microsoft.UI.Xaml.Controls.Button";
+            _typeNameTable[19] = "Microsoft.UI.Xaml.Controls.Button";
+            _typeNameTable[20] = "Microsoft.UI.Xaml.Controls.PersonPicture";
+            _typeNameTable[21] = "Microsoft.UI.Xaml.Controls.Control";
+            _typeNameTable[22] = "Microsoft.UI.Xaml.Media.ImageSource";
+            _typeNameTable[23] = "Int32";
+            _typeNameTable[24] = "Windows.ApplicationModel.Contacts.Contact";
+            _typeNameTable[25] = "Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings";
+            _typeNameTable[26] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[27] = "Microsoft.UI.Xaml.Thickness";
+            _typeNameTable[28] = "Microsoft.UI.Xaml.CornerRadius";
+            _typeNameTable[29] = "CurticeWinUI.Views.BookmarksPage";
+            _typeNameTable[30] = "Microsoft.UI.Xaml.Controls.Page";
+            _typeNameTable[31] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[32] = "CurticeWinUI.ViewModels.BookmarksViewModel";
+            _typeNameTable[33] = "CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient";
+            _typeNameTable[34] = "CommunityToolkit.Mvvm.ComponentModel.ObservableObject";
+            _typeNameTable[35] = "CurticeWinUI.Views.FriendsPage";
+            _typeNameTable[36] = "CurticeWinUI.ViewModels.FriendsViewModel";
+            _typeNameTable[37] = "CurticeWinUI.Views.GroupsPage";
+            _typeNameTable[38] = "CurticeWinUI.ViewModels.GroupsViewModel";
+            _typeNameTable[39] = "Microsoft.UI.Xaml.Controls.InfoBadge";
+            _typeNameTable[40] = "Microsoft.UI.Xaml.Controls.IconSource";
+            _typeNameTable[41] = "Microsoft.UI.Xaml.Controls.InfoBadgeTemplateSettings";
+            _typeNameTable[42] = "Microsoft.UI.Xaml.Controls.DropDownButton";
             _typeNameTable[43] = "Microsoft.UI.Xaml.Controls.ContentControl";
             _typeNameTable[44] = "CurticeWinUI.Views.MessagerPage";
             _typeNameTable[45] = "CurticeWinUI.ViewModels.MessagerViewModel";
@@ -345,30 +345,30 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
             _typeTable[16] = typeof(global::Microsoft.UI.Xaml.Media.SystemBackdrop);
             _typeTable[17] = typeof(global::Microsoft.UI.Composition.SystemBackdrops.MicaKind);
             _typeTable[18] = typeof(global::CurticeWinUI.MainWindow);
-            _typeTable[19] = typeof(global::Microsoft.UI.Xaml.Thickness);
-            _typeTable[20] = typeof(global::Microsoft.UI.Xaml.CornerRadius);
-            _typeTable[21] = typeof(global::CurticeWinUI.Views.BookmarksPage);
-            _typeTable[22] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
-            _typeTable[23] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
-            _typeTable[24] = typeof(global::CurticeWinUI.ViewModels.BookmarksViewModel);
-            _typeTable[25] = typeof(global::CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient);
-            _typeTable[26] = typeof(global::CommunityToolkit.Mvvm.ComponentModel.ObservableObject);
-            _typeTable[27] = typeof(global::CurticeWinUI.Views.FriendsPage);
-            _typeTable[28] = typeof(global::CurticeWinUI.ViewModels.FriendsViewModel);
-            _typeTable[29] = typeof(global::CurticeWinUI.Views.GroupsPage);
-            _typeTable[30] = typeof(global::CurticeWinUI.ViewModels.GroupsViewModel);
-            _typeTable[31] = typeof(global::Microsoft.UI.Xaml.Controls.PersonPicture);
-            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
-            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Media.ImageSource);
-            _typeTable[34] = typeof(global::System.Int32);
-            _typeTable[35] = typeof(global::Windows.ApplicationModel.Contacts.Contact);
-            _typeTable[36] = typeof(global::Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings);
-            _typeTable[37] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[38] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge);
-            _typeTable[39] = typeof(global::Microsoft.UI.Xaml.Controls.IconSource);
-            _typeTable[40] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadgeTemplateSettings);
-            _typeTable[41] = typeof(global::Microsoft.UI.Xaml.Controls.DropDownButton);
-            _typeTable[42] = typeof(global::Microsoft.UI.Xaml.Controls.Button);
+            _typeTable[19] = typeof(global::Microsoft.UI.Xaml.Controls.Button);
+            _typeTable[20] = typeof(global::Microsoft.UI.Xaml.Controls.PersonPicture);
+            _typeTable[21] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
+            _typeTable[22] = typeof(global::Microsoft.UI.Xaml.Media.ImageSource);
+            _typeTable[23] = typeof(global::System.Int32);
+            _typeTable[24] = typeof(global::Windows.ApplicationModel.Contacts.Contact);
+            _typeTable[25] = typeof(global::Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings);
+            _typeTable[26] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[27] = typeof(global::Microsoft.UI.Xaml.Thickness);
+            _typeTable[28] = typeof(global::Microsoft.UI.Xaml.CornerRadius);
+            _typeTable[29] = typeof(global::CurticeWinUI.Views.BookmarksPage);
+            _typeTable[30] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
+            _typeTable[31] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[32] = typeof(global::CurticeWinUI.ViewModels.BookmarksViewModel);
+            _typeTable[33] = typeof(global::CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient);
+            _typeTable[34] = typeof(global::CommunityToolkit.Mvvm.ComponentModel.ObservableObject);
+            _typeTable[35] = typeof(global::CurticeWinUI.Views.FriendsPage);
+            _typeTable[36] = typeof(global::CurticeWinUI.ViewModels.FriendsViewModel);
+            _typeTable[37] = typeof(global::CurticeWinUI.Views.GroupsPage);
+            _typeTable[38] = typeof(global::CurticeWinUI.ViewModels.GroupsViewModel);
+            _typeTable[39] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge);
+            _typeTable[40] = typeof(global::Microsoft.UI.Xaml.Controls.IconSource);
+            _typeTable[41] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadgeTemplateSettings);
+            _typeTable[42] = typeof(global::Microsoft.UI.Xaml.Controls.DropDownButton);
             _typeTable[43] = typeof(global::Microsoft.UI.Xaml.Controls.ContentControl);
             _typeTable[44] = typeof(global::CurticeWinUI.Views.MessagerPage);
             _typeTable[45] = typeof(global::CurticeWinUI.ViewModels.MessagerViewModel);
@@ -461,17 +461,17 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
         private object Activate_4_WindowEx() { return new global::WinUIEx.WindowEx(); }
         private object Activate_15_MicaBackdrop() { return new global::Microsoft.UI.Xaml.Media.MicaBackdrop(); }
         private object Activate_18_MainWindow() { return new global::CurticeWinUI.MainWindow(); }
-        private object Activate_21_BookmarksPage() { return new global::CurticeWinUI.Views.BookmarksPage(); }
-        private object Activate_24_BookmarksViewModel() { return new global::CurticeWinUI.ViewModels.BookmarksViewModel(); }
-        private object Activate_27_FriendsPage() { return new global::CurticeWinUI.Views.FriendsPage(); }
-        private object Activate_28_FriendsViewModel() { return new global::CurticeWinUI.ViewModels.FriendsViewModel(); }
-        private object Activate_29_GroupsPage() { return new global::CurticeWinUI.Views.GroupsPage(); }
-        private object Activate_30_GroupsViewModel() { return new global::CurticeWinUI.ViewModels.GroupsViewModel(); }
-        private object Activate_31_PersonPicture() { return new global::Microsoft.UI.Xaml.Controls.PersonPicture(); }
-        private object Activate_35_Contact() { return new global::Windows.ApplicationModel.Contacts.Contact(); }
-        private object Activate_38_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
-        private object Activate_40_InfoBadgeTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.InfoBadgeTemplateSettings(); }
-        private object Activate_41_DropDownButton() { return new global::Microsoft.UI.Xaml.Controls.DropDownButton(); }
+        private object Activate_20_PersonPicture() { return new global::Microsoft.UI.Xaml.Controls.PersonPicture(); }
+        private object Activate_24_Contact() { return new global::Windows.ApplicationModel.Contacts.Contact(); }
+        private object Activate_29_BookmarksPage() { return new global::CurticeWinUI.Views.BookmarksPage(); }
+        private object Activate_32_BookmarksViewModel() { return new global::CurticeWinUI.ViewModels.BookmarksViewModel(); }
+        private object Activate_35_FriendsPage() { return new global::CurticeWinUI.Views.FriendsPage(); }
+        private object Activate_36_FriendsViewModel() { return new global::CurticeWinUI.ViewModels.FriendsViewModel(); }
+        private object Activate_37_GroupsPage() { return new global::CurticeWinUI.Views.GroupsPage(); }
+        private object Activate_38_GroupsViewModel() { return new global::CurticeWinUI.ViewModels.GroupsViewModel(); }
+        private object Activate_39_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
+        private object Activate_41_InfoBadgeTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.InfoBadgeTemplateSettings(); }
+        private object Activate_42_DropDownButton() { return new global::Microsoft.UI.Xaml.Controls.DropDownButton(); }
         private object Activate_44_MessagerPage() { return new global::CurticeWinUI.Views.MessagerPage(); }
         private object Activate_45_MessagerViewModel() { return new global::CurticeWinUI.ViewModels.MessagerViewModel(); }
         private object Activate_46_MusicPage() { return new global::CurticeWinUI.Views.MusicPage(); }
@@ -658,90 +658,13 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 19:   //  Microsoft.UI.Xaml.Thickness
-                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.AddMemberName("Left");
-                userType.AddMemberName("Top");
-                userType.AddMemberName("Right");
-                userType.AddMemberName("Bottom");
-                xamlType = userType;
-                break;
-
-            case 20:   //  Microsoft.UI.Xaml.CornerRadius
-                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.AddMemberName("TopLeft");
-                userType.AddMemberName("TopRight");
-                userType.AddMemberName("BottomRight");
-                userType.AddMemberName("BottomLeft");
-                xamlType = userType;
-                break;
-
-            case 21:   //  CurticeWinUI.Views.BookmarksPage
-                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_21_BookmarksPage;
-                userType.AddMemberName("ViewModel");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 22:   //  Microsoft.UI.Xaml.Controls.Page
+            case 19:   //  Microsoft.UI.Xaml.Controls.Button
                 xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 23:   //  Microsoft.UI.Xaml.Controls.UserControl
-                xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 24:   //  CurticeWinUI.ViewModels.BookmarksViewModel
-                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 25:   //  CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient
-                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableObject"));
-                xamlType = userType;
-                break;
-
-            case 26:   //  CommunityToolkit.Mvvm.ComponentModel.ObservableObject
-                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                xamlType = userType;
-                break;
-
-            case 27:   //  CurticeWinUI.Views.FriendsPage
-                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_27_FriendsPage;
-                userType.AddMemberName("ViewModel");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 28:   //  CurticeWinUI.ViewModels.FriendsViewModel
-                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 29:   //  CurticeWinUI.Views.GroupsPage
-                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_29_GroupsPage;
-                userType.AddMemberName("ViewModel");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 30:   //  CurticeWinUI.ViewModels.GroupsViewModel
-                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 31:   //  Microsoft.UI.Xaml.Controls.PersonPicture
+            case 20:   //  Microsoft.UI.Xaml.Controls.PersonPicture
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_31_PersonPicture;
+                userType.Activator = Activate_20_PersonPicture;
                 userType.AddMemberName("ProfilePicture");
                 userType.AddMemberName("BadgeGlyph");
                 userType.AddMemberName("BadgeImageSource");
@@ -756,61 +679,138 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 32:   //  Microsoft.UI.Xaml.Controls.Control
+            case 21:   //  Microsoft.UI.Xaml.Controls.Control
                 xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 33:   //  Microsoft.UI.Xaml.Media.ImageSource
+            case 22:   //  Microsoft.UI.Xaml.Media.ImageSource
                 xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 34:   //  Int32
+            case 23:   //  Int32
                 xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 35:   //  Windows.ApplicationModel.Contacts.Contact
+            case 24:   //  Windows.ApplicationModel.Contacts.Contact
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 36:   //  Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings
+            case 25:   //  Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 37:   //  Microsoft.UI.Xaml.DependencyObject
+            case 26:   //  Microsoft.UI.Xaml.DependencyObject
                 xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 38:   //  Microsoft.UI.Xaml.Controls.InfoBadge
+            case 27:   //  Microsoft.UI.Xaml.Thickness
+                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.AddMemberName("Left");
+                userType.AddMemberName("Top");
+                userType.AddMemberName("Right");
+                userType.AddMemberName("Bottom");
+                xamlType = userType;
+                break;
+
+            case 28:   //  Microsoft.UI.Xaml.CornerRadius
+                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.AddMemberName("TopLeft");
+                userType.AddMemberName("TopRight");
+                userType.AddMemberName("BottomRight");
+                userType.AddMemberName("BottomLeft");
+                xamlType = userType;
+                break;
+
+            case 29:   //  CurticeWinUI.Views.BookmarksPage
+                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_29_BookmarksPage;
+                userType.AddMemberName("ViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 30:   //  Microsoft.UI.Xaml.Controls.Page
+                xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 31:   //  Microsoft.UI.Xaml.Controls.UserControl
+                xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 32:   //  CurticeWinUI.ViewModels.BookmarksViewModel
+                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 33:   //  CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient
+                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableObject"));
+                xamlType = userType;
+                break;
+
+            case 34:   //  CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 35:   //  CurticeWinUI.Views.FriendsPage
+                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_35_FriendsPage;
+                userType.AddMemberName("ViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 36:   //  CurticeWinUI.ViewModels.FriendsViewModel
+                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 37:   //  CurticeWinUI.Views.GroupsPage
+                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_37_GroupsPage;
+                userType.AddMemberName("ViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 38:   //  CurticeWinUI.ViewModels.GroupsViewModel
+                userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 39:   //  Microsoft.UI.Xaml.Controls.InfoBadge
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_38_InfoBadge;
+                userType.Activator = Activate_39_InfoBadge;
                 userType.AddMemberName("Value");
                 userType.AddMemberName("IconSource");
                 userType.AddMemberName("TemplateSettings");
                 xamlType = userType;
                 break;
 
-            case 39:   //  Microsoft.UI.Xaml.Controls.IconSource
+            case 40:   //  Microsoft.UI.Xaml.Controls.IconSource
                 xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 40:   //  Microsoft.UI.Xaml.Controls.InfoBadgeTemplateSettings
+            case 41:   //  Microsoft.UI.Xaml.Controls.InfoBadgeTemplateSettings
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 41:   //  Microsoft.UI.Xaml.Controls.DropDownButton
+            case 42:   //  Microsoft.UI.Xaml.Controls.DropDownButton
                 userType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Button"));
-                userType.Activator = Activate_41_DropDownButton;
+                userType.Activator = Activate_42_DropDownButton;
                 xamlType = userType;
-                break;
-
-            case 42:   //  Microsoft.UI.Xaml.Controls.Button
-                xamlType = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 43:   //  Microsoft.UI.Xaml.Controls.ContentControl
@@ -1506,205 +1506,205 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Media.MicaBackdrop)instance;
             that.Kind = (global::Microsoft.UI.Composition.SystemBackdrops.MicaKind)Value;
         }
-        private object get_22_Thickness_Left(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
-            return that.Left;
-        }
-        private void set_22_Thickness_Left(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
-            that.Left = (global::System.Double)Value;
-        }
-        private object get_23_Thickness_Top(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
-            return that.Top;
-        }
-        private void set_23_Thickness_Top(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
-            that.Top = (global::System.Double)Value;
-        }
-        private object get_24_Thickness_Right(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
-            return that.Right;
-        }
-        private void set_24_Thickness_Right(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
-            that.Right = (global::System.Double)Value;
-        }
-        private object get_25_Thickness_Bottom(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
-            return that.Bottom;
-        }
-        private void set_25_Thickness_Bottom(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
-            that.Bottom = (global::System.Double)Value;
-        }
-        private object get_26_CornerRadius_TopLeft(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.CornerRadius)instance;
-            return that.TopLeft;
-        }
-        private void set_26_CornerRadius_TopLeft(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.CornerRadius)instance;
-            that.TopLeft = (global::System.Double)Value;
-        }
-        private object get_27_CornerRadius_TopRight(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.CornerRadius)instance;
-            return that.TopRight;
-        }
-        private void set_27_CornerRadius_TopRight(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.CornerRadius)instance;
-            that.TopRight = (global::System.Double)Value;
-        }
-        private object get_28_CornerRadius_BottomRight(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.CornerRadius)instance;
-            return that.BottomRight;
-        }
-        private void set_28_CornerRadius_BottomRight(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.CornerRadius)instance;
-            that.BottomRight = (global::System.Double)Value;
-        }
-        private object get_29_CornerRadius_BottomLeft(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.CornerRadius)instance;
-            return that.BottomLeft;
-        }
-        private void set_29_CornerRadius_BottomLeft(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.CornerRadius)instance;
-            that.BottomLeft = (global::System.Double)Value;
-        }
-        private object get_30_BookmarksPage_ViewModel(object instance)
-        {
-            var that = (global::CurticeWinUI.Views.BookmarksPage)instance;
-            return that.ViewModel;
-        }
-        private object get_31_FriendsPage_ViewModel(object instance)
-        {
-            var that = (global::CurticeWinUI.Views.FriendsPage)instance;
-            return that.ViewModel;
-        }
-        private object get_32_GroupsPage_ViewModel(object instance)
-        {
-            var that = (global::CurticeWinUI.Views.GroupsPage)instance;
-            return that.ViewModel;
-        }
-        private object get_33_PersonPicture_ProfilePicture(object instance)
+        private object get_22_PersonPicture_ProfilePicture(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.ProfilePicture;
         }
-        private void set_33_PersonPicture_ProfilePicture(object instance, object Value)
+        private void set_22_PersonPicture_ProfilePicture(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.ProfilePicture = (global::Microsoft.UI.Xaml.Media.ImageSource)Value;
         }
-        private object get_34_PersonPicture_BadgeGlyph(object instance)
+        private object get_23_PersonPicture_BadgeGlyph(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.BadgeGlyph;
         }
-        private void set_34_PersonPicture_BadgeGlyph(object instance, object Value)
+        private void set_23_PersonPicture_BadgeGlyph(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.BadgeGlyph = (global::System.String)Value;
         }
-        private object get_35_PersonPicture_BadgeImageSource(object instance)
+        private object get_24_PersonPicture_BadgeImageSource(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.BadgeImageSource;
         }
-        private void set_35_PersonPicture_BadgeImageSource(object instance, object Value)
+        private void set_24_PersonPicture_BadgeImageSource(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.BadgeImageSource = (global::Microsoft.UI.Xaml.Media.ImageSource)Value;
         }
-        private object get_36_PersonPicture_BadgeNumber(object instance)
+        private object get_25_PersonPicture_BadgeNumber(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.BadgeNumber;
         }
-        private void set_36_PersonPicture_BadgeNumber(object instance, object Value)
+        private void set_25_PersonPicture_BadgeNumber(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.BadgeNumber = (global::System.Int32)Value;
         }
-        private object get_37_PersonPicture_BadgeText(object instance)
+        private object get_26_PersonPicture_BadgeText(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.BadgeText;
         }
-        private void set_37_PersonPicture_BadgeText(object instance, object Value)
+        private void set_26_PersonPicture_BadgeText(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.BadgeText = (global::System.String)Value;
         }
-        private object get_38_PersonPicture_Contact(object instance)
+        private object get_27_PersonPicture_Contact(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.Contact;
         }
-        private void set_38_PersonPicture_Contact(object instance, object Value)
+        private void set_27_PersonPicture_Contact(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.Contact = (global::Windows.ApplicationModel.Contacts.Contact)Value;
         }
-        private object get_39_PersonPicture_DisplayName(object instance)
+        private object get_28_PersonPicture_DisplayName(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.DisplayName;
         }
-        private void set_39_PersonPicture_DisplayName(object instance, object Value)
+        private void set_28_PersonPicture_DisplayName(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.DisplayName = (global::System.String)Value;
         }
-        private object get_40_PersonPicture_Initials(object instance)
+        private object get_29_PersonPicture_Initials(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.Initials;
         }
-        private void set_40_PersonPicture_Initials(object instance, object Value)
+        private void set_29_PersonPicture_Initials(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.Initials = (global::System.String)Value;
         }
-        private object get_41_PersonPicture_IsGroup(object instance)
+        private object get_30_PersonPicture_IsGroup(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.IsGroup;
         }
-        private void set_41_PersonPicture_IsGroup(object instance, object Value)
+        private void set_30_PersonPicture_IsGroup(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.IsGroup = (global::System.Boolean)Value;
         }
-        private object get_42_PersonPicture_PreferSmallImage(object instance)
+        private object get_31_PersonPicture_PreferSmallImage(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.PreferSmallImage;
         }
-        private void set_42_PersonPicture_PreferSmallImage(object instance, object Value)
+        private void set_31_PersonPicture_PreferSmallImage(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             that.PreferSmallImage = (global::System.Boolean)Value;
         }
-        private object get_43_PersonPicture_TemplateSettings(object instance)
+        private object get_32_PersonPicture_TemplateSettings(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.PersonPicture)instance;
             return that.TemplateSettings;
+        }
+        private object get_33_Thickness_Left(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
+            return that.Left;
+        }
+        private void set_33_Thickness_Left(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
+            that.Left = (global::System.Double)Value;
+        }
+        private object get_34_Thickness_Top(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
+            return that.Top;
+        }
+        private void set_34_Thickness_Top(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
+            that.Top = (global::System.Double)Value;
+        }
+        private object get_35_Thickness_Right(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
+            return that.Right;
+        }
+        private void set_35_Thickness_Right(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
+            that.Right = (global::System.Double)Value;
+        }
+        private object get_36_Thickness_Bottom(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
+            return that.Bottom;
+        }
+        private void set_36_Thickness_Bottom(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
+            that.Bottom = (global::System.Double)Value;
+        }
+        private object get_37_CornerRadius_TopLeft(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.CornerRadius)instance;
+            return that.TopLeft;
+        }
+        private void set_37_CornerRadius_TopLeft(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.CornerRadius)instance;
+            that.TopLeft = (global::System.Double)Value;
+        }
+        private object get_38_CornerRadius_TopRight(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.CornerRadius)instance;
+            return that.TopRight;
+        }
+        private void set_38_CornerRadius_TopRight(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.CornerRadius)instance;
+            that.TopRight = (global::System.Double)Value;
+        }
+        private object get_39_CornerRadius_BottomRight(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.CornerRadius)instance;
+            return that.BottomRight;
+        }
+        private void set_39_CornerRadius_BottomRight(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.CornerRadius)instance;
+            that.BottomRight = (global::System.Double)Value;
+        }
+        private object get_40_CornerRadius_BottomLeft(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.CornerRadius)instance;
+            return that.BottomLeft;
+        }
+        private void set_40_CornerRadius_BottomLeft(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.CornerRadius)instance;
+            that.BottomLeft = (global::System.Double)Value;
+        }
+        private object get_41_BookmarksPage_ViewModel(object instance)
+        {
+            var that = (global::CurticeWinUI.Views.BookmarksPage)instance;
+            return that.ViewModel;
+        }
+        private object get_42_FriendsPage_ViewModel(object instance)
+        {
+            var that = (global::CurticeWinUI.Views.FriendsPage)instance;
+            return that.ViewModel;
+        }
+        private object get_43_GroupsPage_ViewModel(object instance)
+        {
+            var that = (global::CurticeWinUI.Views.GroupsPage)instance;
+            return that.ViewModel;
         }
         private object get_44_InfoBadge_Value(object instance)
         {
@@ -2558,146 +2558,146 @@ namespace CurticeWinUI.CurticeWinUI_XamlTypeInfo
                 xamlMember.Getter = get_21_MicaBackdrop_Kind;
                 xamlMember.Setter = set_21_MicaBackdrop_Kind;
                 break;
-            case "Microsoft.UI.Xaml.Thickness.Left":
-                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Thickness");
-                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "Left", "Double");
-                xamlMember.Getter = get_22_Thickness_Left;
-                xamlMember.Setter = set_22_Thickness_Left;
-                break;
-            case "Microsoft.UI.Xaml.Thickness.Top":
-                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Thickness");
-                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "Top", "Double");
-                xamlMember.Getter = get_23_Thickness_Top;
-                xamlMember.Setter = set_23_Thickness_Top;
-                break;
-            case "Microsoft.UI.Xaml.Thickness.Right":
-                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Thickness");
-                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "Right", "Double");
-                xamlMember.Getter = get_24_Thickness_Right;
-                xamlMember.Setter = set_24_Thickness_Right;
-                break;
-            case "Microsoft.UI.Xaml.Thickness.Bottom":
-                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Thickness");
-                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "Bottom", "Double");
-                xamlMember.Getter = get_25_Thickness_Bottom;
-                xamlMember.Setter = set_25_Thickness_Bottom;
-                break;
-            case "Microsoft.UI.Xaml.CornerRadius.TopLeft":
-                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.CornerRadius");
-                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "TopLeft", "Double");
-                xamlMember.Getter = get_26_CornerRadius_TopLeft;
-                xamlMember.Setter = set_26_CornerRadius_TopLeft;
-                break;
-            case "Microsoft.UI.Xaml.CornerRadius.TopRight":
-                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.CornerRadius");
-                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "TopRight", "Double");
-                xamlMember.Getter = get_27_CornerRadius_TopRight;
-                xamlMember.Setter = set_27_CornerRadius_TopRight;
-                break;
-            case "Microsoft.UI.Xaml.CornerRadius.BottomRight":
-                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.CornerRadius");
-                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "BottomRight", "Double");
-                xamlMember.Getter = get_28_CornerRadius_BottomRight;
-                xamlMember.Setter = set_28_CornerRadius_BottomRight;
-                break;
-            case "Microsoft.UI.Xaml.CornerRadius.BottomLeft":
-                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.CornerRadius");
-                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "BottomLeft", "Double");
-                xamlMember.Getter = get_29_CornerRadius_BottomLeft;
-                xamlMember.Setter = set_29_CornerRadius_BottomLeft;
-                break;
-            case "CurticeWinUI.Views.BookmarksPage.ViewModel":
-                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CurticeWinUI.Views.BookmarksPage");
-                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "ViewModel", "CurticeWinUI.ViewModels.BookmarksViewModel");
-                xamlMember.Getter = get_30_BookmarksPage_ViewModel;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "CurticeWinUI.Views.FriendsPage.ViewModel":
-                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CurticeWinUI.Views.FriendsPage");
-                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "ViewModel", "CurticeWinUI.ViewModels.FriendsViewModel");
-                xamlMember.Getter = get_31_FriendsPage_ViewModel;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "CurticeWinUI.Views.GroupsPage.ViewModel":
-                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CurticeWinUI.Views.GroupsPage");
-                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "ViewModel", "CurticeWinUI.ViewModels.GroupsViewModel");
-                xamlMember.Getter = get_32_GroupsPage_ViewModel;
-                xamlMember.SetIsReadOnly();
-                break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.ProfilePicture":
                 userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "ProfilePicture", "Microsoft.UI.Xaml.Media.ImageSource");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_33_PersonPicture_ProfilePicture;
-                xamlMember.Setter = set_33_PersonPicture_ProfilePicture;
+                xamlMember.Getter = get_22_PersonPicture_ProfilePicture;
+                xamlMember.Setter = set_22_PersonPicture_ProfilePicture;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.BadgeGlyph":
                 userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "BadgeGlyph", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_34_PersonPicture_BadgeGlyph;
-                xamlMember.Setter = set_34_PersonPicture_BadgeGlyph;
+                xamlMember.Getter = get_23_PersonPicture_BadgeGlyph;
+                xamlMember.Setter = set_23_PersonPicture_BadgeGlyph;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.BadgeImageSource":
                 userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "BadgeImageSource", "Microsoft.UI.Xaml.Media.ImageSource");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_35_PersonPicture_BadgeImageSource;
-                xamlMember.Setter = set_35_PersonPicture_BadgeImageSource;
+                xamlMember.Getter = get_24_PersonPicture_BadgeImageSource;
+                xamlMember.Setter = set_24_PersonPicture_BadgeImageSource;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.BadgeNumber":
                 userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "BadgeNumber", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_36_PersonPicture_BadgeNumber;
-                xamlMember.Setter = set_36_PersonPicture_BadgeNumber;
+                xamlMember.Getter = get_25_PersonPicture_BadgeNumber;
+                xamlMember.Setter = set_25_PersonPicture_BadgeNumber;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.BadgeText":
                 userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "BadgeText", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_37_PersonPicture_BadgeText;
-                xamlMember.Setter = set_37_PersonPicture_BadgeText;
+                xamlMember.Getter = get_26_PersonPicture_BadgeText;
+                xamlMember.Setter = set_26_PersonPicture_BadgeText;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.Contact":
                 userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "Contact", "Windows.ApplicationModel.Contacts.Contact");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_38_PersonPicture_Contact;
-                xamlMember.Setter = set_38_PersonPicture_Contact;
+                xamlMember.Getter = get_27_PersonPicture_Contact;
+                xamlMember.Setter = set_27_PersonPicture_Contact;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.DisplayName":
                 userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "DisplayName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_39_PersonPicture_DisplayName;
-                xamlMember.Setter = set_39_PersonPicture_DisplayName;
+                xamlMember.Getter = get_28_PersonPicture_DisplayName;
+                xamlMember.Setter = set_28_PersonPicture_DisplayName;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.Initials":
                 userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "Initials", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_40_PersonPicture_Initials;
-                xamlMember.Setter = set_40_PersonPicture_Initials;
+                xamlMember.Getter = get_29_PersonPicture_Initials;
+                xamlMember.Setter = set_29_PersonPicture_Initials;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.IsGroup":
                 userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "IsGroup", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_41_PersonPicture_IsGroup;
-                xamlMember.Setter = set_41_PersonPicture_IsGroup;
+                xamlMember.Getter = get_30_PersonPicture_IsGroup;
+                xamlMember.Setter = set_30_PersonPicture_IsGroup;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.PreferSmallImage":
                 userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "PreferSmallImage", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_42_PersonPicture_PreferSmallImage;
-                xamlMember.Setter = set_42_PersonPicture_PreferSmallImage;
+                xamlMember.Getter = get_31_PersonPicture_PreferSmallImage;
+                xamlMember.Setter = set_31_PersonPicture_PreferSmallImage;
                 break;
             case "Microsoft.UI.Xaml.Controls.PersonPicture.TemplateSettings":
                 userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.PersonPicture");
                 xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.PersonPictureTemplateSettings");
-                xamlMember.Getter = get_43_PersonPicture_TemplateSettings;
+                xamlMember.Getter = get_32_PersonPicture_TemplateSettings;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Thickness.Left":
+                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Thickness");
+                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "Left", "Double");
+                xamlMember.Getter = get_33_Thickness_Left;
+                xamlMember.Setter = set_33_Thickness_Left;
+                break;
+            case "Microsoft.UI.Xaml.Thickness.Top":
+                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Thickness");
+                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "Top", "Double");
+                xamlMember.Getter = get_34_Thickness_Top;
+                xamlMember.Setter = set_34_Thickness_Top;
+                break;
+            case "Microsoft.UI.Xaml.Thickness.Right":
+                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Thickness");
+                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "Right", "Double");
+                xamlMember.Getter = get_35_Thickness_Right;
+                xamlMember.Setter = set_35_Thickness_Right;
+                break;
+            case "Microsoft.UI.Xaml.Thickness.Bottom":
+                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Thickness");
+                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "Bottom", "Double");
+                xamlMember.Getter = get_36_Thickness_Bottom;
+                xamlMember.Setter = set_36_Thickness_Bottom;
+                break;
+            case "Microsoft.UI.Xaml.CornerRadius.TopLeft":
+                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.CornerRadius");
+                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "TopLeft", "Double");
+                xamlMember.Getter = get_37_CornerRadius_TopLeft;
+                xamlMember.Setter = set_37_CornerRadius_TopLeft;
+                break;
+            case "Microsoft.UI.Xaml.CornerRadius.TopRight":
+                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.CornerRadius");
+                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "TopRight", "Double");
+                xamlMember.Getter = get_38_CornerRadius_TopRight;
+                xamlMember.Setter = set_38_CornerRadius_TopRight;
+                break;
+            case "Microsoft.UI.Xaml.CornerRadius.BottomRight":
+                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.CornerRadius");
+                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "BottomRight", "Double");
+                xamlMember.Getter = get_39_CornerRadius_BottomRight;
+                xamlMember.Setter = set_39_CornerRadius_BottomRight;
+                break;
+            case "Microsoft.UI.Xaml.CornerRadius.BottomLeft":
+                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.CornerRadius");
+                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "BottomLeft", "Double");
+                xamlMember.Getter = get_40_CornerRadius_BottomLeft;
+                xamlMember.Setter = set_40_CornerRadius_BottomLeft;
+                break;
+            case "CurticeWinUI.Views.BookmarksPage.ViewModel":
+                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CurticeWinUI.Views.BookmarksPage");
+                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "ViewModel", "CurticeWinUI.ViewModels.BookmarksViewModel");
+                xamlMember.Getter = get_41_BookmarksPage_ViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "CurticeWinUI.Views.FriendsPage.ViewModel":
+                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CurticeWinUI.Views.FriendsPage");
+                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "ViewModel", "CurticeWinUI.ViewModels.FriendsViewModel");
+                xamlMember.Getter = get_42_FriendsPage_ViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "CurticeWinUI.Views.GroupsPage.ViewModel":
+                userType = (global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CurticeWinUI.Views.GroupsPage");
+                xamlMember = new global::CurticeWinUI.CurticeWinUI_XamlTypeInfo.XamlMember(this, "ViewModel", "CurticeWinUI.ViewModels.GroupsViewModel");
+                xamlMember.Getter = get_43_GroupsPage_ViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.InfoBadge.Value":

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CurticeWinUI.Models;
 
-public class Message
+public class DialogListElement
 {
     public string? Avatar
     {

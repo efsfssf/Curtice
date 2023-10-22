@@ -17,6 +17,9 @@
   <ItemGroup>
     <Content Remove="Assets\avatar1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Styles\ContactInfoButtonTemplate.xaml" />
+  </ItemGroup>
 
   <ItemGroup>
     <Manifest Include="$(ApplicationManifest)" />
@@ -37,6 +40,9 @@
     <None Update="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Page Update="Styles\ContactInfoButtonTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">

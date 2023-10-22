@@ -11,12 +11,32 @@ using CommunityToolkit.Mvvm.Input;
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.UI.Xaml.Media.Imaging;
 using Windows.ApplicationModel.DataTransfer;
+using Microsoft.UI.Xaml.Media;
+using Microsoft.UI.Xaml;
+using Microsoft.UI;
 
 namespace CurticeWinUI.ViewModels;
 
 public class MessagerViewModel : ObservableRecipient
 {
+    #region Conversation Screen Header Properties
+    public string ContactName
+    { 
+        get; set; 
+    }
 
+    public Uri ContactPhoto 
+    { 
+        get; set; 
+    }
+
+    public string LastSeen
+    {
+        get; set;
+    }
+    #endregion
+
+    #region Dialogs Properties
     private ObservableCollection<Dialog> dialogs = default!;
     [NotNull]
     public ObservableCollection<Dialog> Dialogs
@@ -62,9 +82,9 @@ public class MessagerViewModel : ObservableRecipient
         }
     }
 
-    private ObservableCollection<Message> selectedDialogMessages = default!;
+    private ObservableCollection<DialogListElement> selectedDialogMessages = default!;
     [NotNull]
-    public ObservableCollection<Message> SelectedDialogMessages
+    public ObservableCollection<DialogListElement> SelectedDialogMessages
     {
         get => selectedDialogMessages;
         set
@@ -96,8 +116,106 @@ public class MessagerViewModel : ObservableRecipient
         get => rightClickedDialog;
         set => SetProperty(ref rightClickedDialog, value);
     }
+
+    #endregion
+
+    #region MessagesBody
+    public ObservableCollection<MessageItem> MessagesList
+    {
+        get; set;
+    }
+    #endregion
     public MessagerViewModel()
     {
+
+        MessagesList = new ObservableCollection<MessageItem>
+            {
+                new MessageItem
+                {
+                    MsgText = "Привет",
+                    MsgDateTime = DateTime.Now,
+                    BgColor = new SolidColorBrush(Colors.LightBlue),
+                    MsgAlignment = HorizontalAlignment.Left
+                },
+                new MessageItem
+                {
+                    MsgText = "Привет",
+                    MsgDateTime = DateTime.Now,
+                    BgColor = new SolidColorBrush(Colors.LightGreen),
+                    MsgAlignment = HorizontalAlignment.Right
+                },
+                new MessageItem
+                {
+                    MsgText = "Как дела?",
+                    MsgDateTime = DateTime.Now,
+                    BgColor = new SolidColorBrush(Colors.LightBlue),
+                    MsgAlignment = HorizontalAlignment.Left
+                },
+                new MessageItem
+                {
+                    MsgText = "Нормально",
+                    MsgDateTime = DateTime.Now,
+                    BgColor = new SolidColorBrush(Colors.LightGreen),
+                    MsgAlignment = HorizontalAlignment.Right
+                },
+                new MessageItem
+                {
+                    MsgText = "Супер",
+                    MsgDateTime = DateTime.Now,
+                    BgColor = new SolidColorBrush(Colors.LightGreen),
+                    MsgAlignment = HorizontalAlignment.Right
+                },
+                new MessageItem
+                {
+                    MsgText = "Что делаешь?",
+                    MsgDateTime = DateTime.Now,
+                    BgColor = new SolidColorBrush(Colors.LightBlue),
+                    MsgAlignment = HorizontalAlignment.Left
+                },
+                new MessageItem
+                {
+                    MsgText = "Да так...",
+                    MsgDateTime = DateTime.Now,
+                    BgColor = new SolidColorBrush(Colors.LightGreen),
+                    MsgAlignment = HorizontalAlignment.Right
+                },
+                new MessageItem
+                {
+                    MsgText = "Ничего",
+                    MsgDateTime = DateTime.Now,
+                    BgColor = new SolidColorBrush(Colors.LightGreen),
+                    MsgAlignment = HorizontalAlignment.Right
+                },
+                new MessageItem
+                {
+                    MsgText = "А ты?",
+                    MsgDateTime = DateTime.Now,
+                    BgColor = new SolidColorBrush(Colors.LightGreen),
+                    MsgAlignment = HorizontalAlignment.Right
+                },
+                new MessageItem
+                {
+                    MsgText = "жду нового мессенджера",
+                    MsgDateTime = DateTime.Now,
+                    BgColor = new SolidColorBrush(Colors.LightBlue),
+                    MsgAlignment = HorizontalAlignment.Left
+                },
+                new MessageItem
+                {
+                    MsgText = "Какого?",
+                    MsgDateTime = DateTime.Now,
+                    BgColor = new SolidColorBrush(Colors.LightGreen),
+                    MsgAlignment = HorizontalAlignment.Right
+                },
+                new MessageItem
+                {
+                    MsgText = "Конечно же Curtice!",
+                    MsgDateTime = DateTime.Now,
+                    BgColor = new SolidColorBrush(Colors.LightBlue),
+                    MsgAlignment = HorizontalAlignment.Left
+                }
+            };
+
         CopyChatIDCommand = new RelayCommand<string>(async (pageKey) => {
             if (pageKey == null)
             {
@@ -113,6 +231,8 @@ public class MessagerViewModel : ObservableRecipient
         // Загрузка диалогов и сообщений
         LoadDialogs();
     }
+
+    #region Dialogs Methods
 
     private void OnCopyChatID(string chatId)
     {
@@ -153,6 +273,8 @@ public class MessagerViewModel : ObservableRecipient
             }
         };
     }
+
+    #endregion
 
     private void OnAttach()
     {

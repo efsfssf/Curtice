@@ -1,5 +1,6 @@
 App.xbf
 MainWindow.xbf
+Styles\ContactInfoButtonTemplate.xbf
 Styles\FontSizes.xbf
 Styles\TextBlock.xbf
 Styles\Thickness.xbf

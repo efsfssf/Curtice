@@ -353,3 +353,6 @@ D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\qualifi
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\qualifiers.txt.intermediate
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\MultipleQualifiersPerDimensionFound.txt
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\ProjectArchitectures.txt
+D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Styles\ContactInfoButtonTemplate.xaml
+D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Styles\ContactInfoButtonTemplate.xbf
+D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Styles\ContactInfoButtonTemplate.xbf
