@@ -9,6 +9,10 @@ namespace CurticeWinUI.Models;
 
 public class Dialog
 {
+    public string? ChatID
+    {
+        get; set;
+    }
     public string? Avatar
     {
         get; set;

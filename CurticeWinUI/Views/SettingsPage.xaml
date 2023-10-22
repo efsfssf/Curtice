@@ -52,7 +52,12 @@
                 </StackPanel>
 
 
-
+                <InfoBar
+                    IsOpen="True"
+                    IsClosable="False"
+                    Margin="0,20"
+                    Severity="Informational"
+                    x:Uid="Informational_Restart"/>
                 <TextBlock x:Uid="Settings_AutoRunPage" />
                 <StackPanel Margin="{StaticResource XSmallTopMargin}">
                     <DropDownButton Content="{x:Bind ViewModel.SelectedPage, Mode=OneWay, Converter={StaticResource PageKeyToResourceStringConverter}}">

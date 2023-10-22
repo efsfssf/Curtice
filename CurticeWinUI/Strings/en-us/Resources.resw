@@ -218,4 +218,13 @@
   <data name="NewsfeedPage" xml:space="preserve">
     <value>Newsfeed</value>
   </data>
+  <data name="Informational_Restart.Message" xml:space="preserve">
+    <value>You will see the changes made below the next time you run the application.</value>
+  </data>
+  <data name="Informational_Restart.Title" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="CopyChatID.Text" xml:space="preserve">
+    <value>Copy ChatID</value>
+  </data>
 </root>

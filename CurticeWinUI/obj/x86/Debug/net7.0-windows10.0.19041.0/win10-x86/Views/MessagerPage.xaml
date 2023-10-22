@@ -6,7 +6,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     xmlns:viewmodels="using:CurticeWinUI.ViewModels"
-    xmlns:models="using:CurticeWinUI.Models">
+    xmlns:models="using:CurticeWinUI.Models"
+    >
 
     <Grid>
         <Grid.RowDefinitions>
@@ -59,7 +60,8 @@
                 Grid.Row="1"
                 >
                 <ListView x:ConnectionId='2' Grid.Column="0"                                          
-                                                                                 >
+                                                                                 
+                                                            >
                     <ListView.ItemTemplate>
                         <DataTemplate                           >
                             <Grid x:ConnectionId='4'>
@@ -96,7 +98,22 @@
                             </Grid>
                         </DataTemplate>
                     </ListView.ItemTemplate>
+                    <ListView.ContextFlyout>
+                        <MenuFlyout x:ConnectionId='10' x:Name="allContactsMenuFlyout">
+                            <MenuFlyoutItem Text="Share">
+                                <MenuFlyoutItem.Icon>
+                                    <FontIcon Glyph="&#xE72D;"/>
+                                </MenuFlyoutItem.Icon>
+                            </MenuFlyoutItem>
+                            <MenuFlyoutItem x:ConnectionId='11' x:Uid="CopyChatID"                                                                                                                             Icon="Copy"/>
 
+
+                            <MenuFlyoutItem Text="Очистить историю сообщений" Icon="Delete"/>
+                            <MenuFlyoutSeparator/>
+                            <MenuFlyoutItem Text="Закрепить"/>
+                            <MenuFlyoutItem Text="Архивировать"/>
+                        </MenuFlyout>
+                    </ListView.ContextFlyout>
                 </ListView>
             </Grid>
         </Grid>

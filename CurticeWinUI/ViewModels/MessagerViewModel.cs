@@ -10,11 +10,13 @@ using System.Linq;
 using CommunityToolkit.Mvvm.Input;
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.UI.Xaml.Media.Imaging;
+using Windows.ApplicationModel.DataTransfer;
 
 namespace CurticeWinUI.ViewModels;
 
 public class MessagerViewModel : ObservableRecipient
 {
+
     private ObservableCollection<Dialog> dialogs = default!;
     [NotNull]
     public ObservableCollection<Dialog> Dialogs
@@ -84,8 +86,26 @@ public class MessagerViewModel : ObservableRecipient
         get;
     }
 
+    public ICommand CopyChatIDCommand
+    {
+        get;
+    }
+    private Dialog rightClickedDialog;
+    public Dialog RightClickedDialog
+    {
+        get => rightClickedDialog;
+        set => SetProperty(ref rightClickedDialog, value);
+    }
     public MessagerViewModel()
     {
+        CopyChatIDCommand = new RelayCommand<string>(async (pageKey) => {
+            if (pageKey == null)
+            {
+                throw new ArgumentNullException(nameof(pageKey));
+            }
+            OnCopyChatID(pageKey);
+        });
+
         // Инициализация команд и коллекций
         AttachCommand = new RelayCommand(OnAttach);
         SendCommand = new RelayCommand(OnSend);
@@ -93,6 +113,19 @@ public class MessagerViewModel : ObservableRecipient
         // Загрузка диалогов и сообщений
         LoadDialogs();
     }
+
+    private void OnCopyChatID(string chatId)
+    {
+        if (!string.IsNullOrEmpty(chatId))
+        {
+            var dataPackage = new DataPackage();
+            dataPackage.SetText(chatId);
+            Clipboard.SetContent(dataPackage);
+        }
+    }
+
+
+
 
     private void LoadDialogs()
     {
@@ -106,7 +139,8 @@ public class MessagerViewModel : ObservableRecipient
                 Name = "Паша Корчевников",
                 LastMessage = "Привет. Как дела?",
                 LastMessageTime = "2 часа назад",
-                UnreadCount = 0
+                UnreadCount = 0,
+                ChatID = "1"
             },
             new Dialog
             {
@@ -114,7 +148,8 @@ public class MessagerViewModel : ObservableRecipient
                 Name = "Маша Наумова",
                 LastMessage = "Когда гулять?",
                 LastMessageTime = "Только что",
-                UnreadCount = 0
+                UnreadCount = 0,
+                ChatID = "2"
             }
         };
     }

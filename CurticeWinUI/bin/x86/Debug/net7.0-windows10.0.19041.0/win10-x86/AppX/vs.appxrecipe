@@ -29,13 +29,13 @@
     <AppXManifest Include="D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-10-21T19:17:22.509</Modified>
+      <Modified>2023-10-22T10:51:05.473</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-10-21T19:17:22.208</Modified>
+      <Modified>2023-10-22T10:51:05.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\CurticeWinUI.runtimeconfig.json">
       <PackagePath>CurticeWinUI.runtimeconfig.json</PackagePath>
@@ -43,7 +43,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\CurticeWinUI.dll">
       <PackagePath>CurticeWinUI.dll</PackagePath>
-      <Modified>2023-10-21T19:17:22.027</Modified>
+      <Modified>2023-10-22T10:51:04.352</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VKUI3\CurticeWinUI\appsettings.json">
       <PackagePath>appsettings.json</PackagePath>
@@ -51,11 +51,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\apphost.exe">
       <PackagePath>CurticeWinUI.exe</PackagePath>
-      <Modified>2023-10-21T19:17:22.051</Modified>
+      <Modified>2023-10-22T10:51:04.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\CurticeWinUI.deps.json">
       <PackagePath>CurticeWinUI.deps.json</PackagePath>
-      <Modified>2023-10-21T17:26:29.554</Modified>
+      <Modified>2023-10-22T10:51:04.871</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bezzu\.nuget\packages\microsoft.netcore.app.runtime.win-x86\7.0.12\runtimes\win-x86\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1031,7 +1031,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VKUI3\CurticeWinUI\Assets\WindowIcon.ico">
       <PackagePath>Assets\WindowIcon.ico</PackagePath>
-      <Modified>2023-10-18T17:48:36.890</Modified>
+      <Modified>2023-10-22T10:48:41.838</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
