@@ -1,7 +1,6 @@
 <p align="center">
-  <img src="[https://raw.githubusercontent.com/efsfssf/Curtice/main/Curtice/Assets/Square150x150Logo.scale-200.png](https://vistapointe.net/images/unknown-5.jpg)"></img>
+  <img src="[sd](https://github.com/efsfssf/Curtice/blob/main/CurticeWinUI/Assets/WindowIcon.ico?raw=true)"></img>
 </p>
-
 ---
 
 <div align="center">
