@@ -11,48 +11,18 @@
 
     <Page.Resources>
         <DataTemplate x:Key="MessageViewTemplate"                                >
-            <Grid x:ConnectionId='4' Height="Auto" Margin="4"                                            >
-                <StackPanel x:ConnectionId='5' MinHeight="75" Width="350" Padding="10, 0, 0, 10"                               CornerRadius="{StaticResource ControlCornerRadius}">
-                    <TextBlock x:ConnectionId='6'                         Padding="0, 10, 0, 0" FontSize="20" Foreground="{ThemeResource SystemControlForegroundAltHighBrush}"/>
-                    <TextBlock x:ConnectionId='7'                             Padding="0, 0, 0, 10" FontSize="15" Foreground="{ThemeResource SystemControlForegroundAltMediumHighBrush}"/>
+            <Grid x:ConnectionId='3' Height="Auto" Margin="4"                                            ><!--Background="{x:Bind BgColor}"-->
+                <StackPanel MinHeight="75" Width="350" Padding="10, 0, 0, 10" Background="{ThemeResource AccentFillColorDefaultBrush}" CornerRadius="{StaticResource ControlCornerRadius}">
+                    <TextBlock x:ConnectionId='4'                         Padding="0, 10, 0, 0" FontSize="20" Foreground="{ThemeResource SystemControlForegroundAltHighBrush}"/>
+                    <TextBlock x:ConnectionId='5'                             Padding="0, 0, 0, 10" FontSize="15" Foreground="{ThemeResource SystemControlForegroundAltMediumHighBrush}"/>
                 </StackPanel>
             </Grid>
         </DataTemplate>
 
-        <ControlTemplate x:Key="ContactInfoButtonTemplate">
-            <!-- Здесь опишите структуру вашей кнопки -->
-            <Grid VerticalAlignment="Center">
-                <Grid.ColumnDefinitions>
-                    <!--Profile Photo-->
-                    <ColumnDefinition Width="Auto"/>
-                    <!--Name & Online Status-->
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-
-                <PersonPicture Width="40" Height="40" ProfilePicture="{Binding Avatar,FallbackValue='https://learn.microsoft.com/windows/uwp/contacts-and-calendar/images/shoulder-tap-static-payload.png', Mode=OneWay}" />
-
-                <Grid
-            Grid.Column="1">
-                    <!--<Grid.RowDefinitions>
-                <RowDefinition/>
-            </Grid.RowDefinitions>-->
-
-                <TextBlock>
-                <!--name-->
-                <Run Text="{Binding ContactName, Mode=OneWay}"
-                FontSize="15"/>
-    
-                <LineBreak/>
-                 <!--online status-->
-                <Run Text="{Binding LastSeen, FallbackValue='Только что', Mode=OneWay}"
-                FontSize="13"/>
-                    </TextBlock>
-                </Grid>
-            </Grid>
-        </ControlTemplate>
+        
     </Page.Resources>
 
-    <Grid>
+    <Grid Margin="0,0,0,15">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
@@ -68,7 +38,7 @@
         </Grid.ColumnDefinitions>
 
         <!--#region ChatList Список сообщений с поиском-->
-        <Grid Grid.Row="1" MinWidth="406">
+        <Grid Grid.Row="1" MinWidth="206">
             <Grid.RowDefinitions>
                 <!--Searchbox-->
                 <RowDefinition Height="Auto"/>
@@ -80,7 +50,7 @@
             <!--Панель с поиском и доп кнопкой создания беседы-->
 
             <!--BorderBrush="White" BorderThickness="1"-->
-            <Grid x:ConnectionId='12'
+            <Grid x:ConnectionId='11'
                 Grid.Row="0"
                 Margin="5"
                 x:Name="Header2"
@@ -104,13 +74,14 @@
 
             <Grid
                 Grid.Row="1"
+                
                 >
-                <ListView x:ConnectionId='13' Grid.Column="0"                                          
+                <ListView x:ConnectionId='12' Grid.Column="0"                                          
                                                                                  
                                                              >
                     <ListView.ItemTemplate>
                         <DataTemplate                           >
-                            <Grid x:ConnectionId='15'>
+                            <Grid x:ConnectionId='14' HorizontalAlignment="Stretch">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="*"/>
                                     <RowDefinition Height="*"/>
@@ -121,20 +92,20 @@
                                     <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
-                                <PersonPicture x:ConnectionId='16'                                  Grid.RowSpan="2" Width ="32" Height="32" Margin="6" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                                <TextBlock x:ConnectionId='17' Grid.Column="1"
+                                <PersonPicture x:ConnectionId='15'                                  Grid.RowSpan="2" Width ="32" Height="32" Margin="0,6,0,6" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                                <TextBlock x:ConnectionId='16' Grid.Column="1"
                                                        
                                               
                                    Style="{ThemeResource BaseTextBlockStyle}"
                                    Margin="12,6,0,0"/>
-                                <TextBlock x:ConnectionId='18' Grid.Column="2"
+                                <TextBlock x:ConnectionId='17' Grid.Column="2"
                                    Grid.ColumnSpan="2"
                                                                   
                                               
                                    Style="{ThemeResource BodyTextBlockStyle}"
                                    Margin="12,6,0,0"
                                    HorizontalAlignment="Right"/>
-                                <TextBlock x:ConnectionId='19' Grid.Column="1"
+                                <TextBlock x:ConnectionId='18' Grid.Column="1"
                                    Grid.Row="1"
                                                               
                                               
@@ -145,7 +116,7 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                     <ListView.ContextFlyout>
-                        <MenuFlyout x:ConnectionId='21' x:Name="allContactsMenuFlyout">
+                        <MenuFlyout x:ConnectionId='20' x:Name="allContactsMenuFlyout">
                             <MenuFlyoutItem Text="Отметить непрочитанным">
                                 <MenuFlyoutItem.Icon>
                                     <FontIcon Glyph="&#xF716;" />
@@ -164,16 +135,17 @@
                             </MenuFlyoutItem>
                             <MenuFlyoutItem Text="Очистить историю сообщений" Icon="Delete"/>
                             <MenuFlyoutSeparator/>
-                            <MenuFlyoutItem x:ConnectionId='22' x:Uid="CopyChatID"                                                                                                                             Icon="Copy"/>
+                            <MenuFlyoutItem x:ConnectionId='21' x:Uid="CopyChatID"                                                                                                                             Icon="Copy"/>
                         </MenuFlyout>
                     </ListView.ContextFlyout>
                 </ListView>
             </Grid>
         </Grid>
-        <Grid Grid.Column="1" Grid.Row="1" BorderBrush="#80000000" Opacity="0.2" BorderThickness="0.5,0,0,0"/>
+        <!--<Grid Grid.Column="1" Grid.Row="1" BorderBrush="#80000000" Opacity="0.2" BorderThickness="0.5,0,0,0"/>-->
 
         <!--#region BodyChat Список сообщений с выбранным диалогом-->
-        <Grid Grid.Column="2" Grid.Row="1">
+        <Border Grid.Column="2" Grid.Row="1" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" BorderThickness="0" CornerRadius="15">
+            <Grid Padding="15">
             
             <Grid.RowDefinitions>
                 <!--Conversation Header-->
@@ -184,7 +156,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-            <Grid x:ConnectionId='8'
+            <Grid x:ConnectionId='6'
                 Margin="5"
                 VerticalAlignment="Center"
                 x:Name="Header1">
@@ -234,7 +206,7 @@
             </Grid>
             
             <!--Conversations Message Body-->
-            <ListView x:ConnectionId='9' x:Name="InvertedListView"
+            <ListView x:ConnectionId='7' x:Name="InvertedListView"
              ItemTemplate="{StaticResource MessageViewTemplate}"                                               Grid.Row="1" DataContext="{Binding SelectedDialog}">
 
                 <!-- The ItemsStackPanel must be edited to update the following two properties -->
@@ -265,8 +237,8 @@
                             <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
 
-                        <TextBox x:ConnectionId='11'
-                            Background="Transparent"
+                        <TextBox x:ConnectionId='8'
+                            Background="{ThemeResource ControlFillColorInputActiveBrush}"
                             BorderThickness="0"
                             VerticalAlignment="Stretch"
                             VerticalContentAlignment="Center"
@@ -274,16 +246,23 @@
                             x:Name="MessageBox"
                             Padding="12,0,0,0">
                         </TextBox>
+                        <!--Buttons-->
+                        <StackPanel Orientation="Horizontal" Grid.Column="1">
+                                <Button x:ConnectionId='9' x:Name="AttachButton" Margin="12,0,0,0">
+                                <FontIcon Glyph="&#xE723;" />
+                            </Button>
+                                <Button x:ConnectionId='10' x:Name="SendButton" Margin="12,0,0,0" Style="{StaticResource AccentButtonStyle}">
+                                    <FontIcon Glyph="&#xE724;" />
+                            </Button>
+                        </StackPanel>
                     </Grid>
                 </Border>
-                <StackPanel Orientation="Horizontal" Grid.Column="1">
-                    <Button x:ConnectionId='10' x:Name="AttachButton">
-                        <FontIcon Glyph="&#xE724;" />
-                    </Button>
-                </StackPanel>
+                
+                
             </Grid>
 
         </Grid>
+        </Border>
     </Grid>
 </Page>
 
