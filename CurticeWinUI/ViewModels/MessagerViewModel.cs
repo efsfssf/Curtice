@@ -14,18 +14,31 @@ using Windows.ApplicationModel.DataTransfer;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml;
 using Microsoft.UI;
+using System.Diagnostics;
 
 namespace CurticeWinUI.ViewModels;
 
 public class MessagerViewModel : ObservableRecipient
 {
     #region Conversation Screen Header Properties
+    private string _contactName = "Загрузка..";
     public string ContactName
-    { 
-        get; set; 
+    {
+        get
+        {
+            return _contactName;
+        }
+        set
+        {
+            if (_contactName != value)
+            {
+                _contactName = value;
+                OnPropertyChanged();
+            }
+        }
     }
 
-    public Uri ContactPhoto 
+    public string Avatar 
     { 
         get; set; 
     }
@@ -64,6 +77,9 @@ public class MessagerViewModel : ObservableRecipient
                 throw new ArgumentNullException("selectedDialog is required.");
             }
             SetProperty(ref selectedDialog, value);
+            Debug.WriteLine($"Selected dialog changed: {value.Name}, {value.Avatar}");
+            ContactName = value.Name;
+            OnPropertyChanged(nameof(ContactName));
         }
     }
 
@@ -124,10 +140,11 @@ public class MessagerViewModel : ObservableRecipient
     {
         get; set;
     }
+
+
     #endregion
     public MessagerViewModel()
     {
-
         MessagesList = new ObservableCollection<MessageItem>
             {
                 new MessageItem

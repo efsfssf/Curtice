@@ -18,6 +18,7 @@ public sealed partial class MessagerPage : Page
     {
         ViewModel = App.GetService<MessagerViewModel>();
         InitializeComponent();
+        this.DataContext = ViewModel;
     }
 
     private void ListView_RightTapped(object sender, RightTappedRoutedEventArgs e)

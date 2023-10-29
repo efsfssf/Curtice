@@ -18,6 +18,38 @@
                 </StackPanel>
             </Grid>
         </DataTemplate>
+
+        <ControlTemplate x:Key="ContactInfoButtonTemplate">
+            <!-- Здесь опишите структуру вашей кнопки -->
+            <Grid VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <!--Profile Photo-->
+                    <ColumnDefinition Width="Auto"/>
+                    <!--Name & Online Status-->
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <PersonPicture Width="40" Height="40" ProfilePicture="{Binding Avatar,FallbackValue='https://learn.microsoft.com/windows/uwp/contacts-and-calendar/images/shoulder-tap-static-payload.png', Mode=OneWay}" />
+
+                <Grid
+            Grid.Column="1">
+                    <!--<Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>-->
+
+                <TextBlock>
+                <!--name-->
+                <Run Text="{Binding ContactName, Mode=OneWay}"
+                FontSize="15"/>
+    
+                <LineBreak/>
+                 <!--online status-->
+                <Run Text="{Binding LastSeen, FallbackValue='Только что', Mode=OneWay}"
+                FontSize="13"/>
+                    </TextBlock>
+                </Grid>
+            </Grid>
+        </ControlTemplate>
     </Page.Resources>
 
     <Grid>
@@ -75,7 +107,7 @@
                 >
                 <ListView Grid.Column="0" ItemsSource="{x:Bind ViewModel.Dialogs}" 
                     SelectedItem="{x:Bind ViewModel.SelectedDialog, Mode=TwoWay}"
-                          RightTapped="ListView_RightTapped">
+                          RightTapped="ListView_RightTapped" >
                     <ListView.ItemTemplate>
                         <DataTemplate x:DataType="models:Dialog">
                             <Grid>
@@ -172,25 +204,26 @@
                 </Grid.ColumnDefinitions>
 
                 <!--Contact Info Button-->
-                <Button Style="{StaticResource ContactInfoButtonTemplate}" />
+                <Button Template="{StaticResource ContactInfoButtonTemplate}" />
+
 
                 <!--Video Call Button-->
-                <Button Grid.Column="1">
+                <Button Grid.Column="1" Margin="2,0">
                     <FontIcon Glyph="&#xE8AA;" />
                 </Button>
 
                 <!--Call Button-->
-                <Button Grid.Column="2">
+                <Button Grid.Column="2" Margin="2,0">
                     <FontIcon Glyph="&#xF715;" />
                 </Button>
 
                 <!--Search Message Button-->
-                <Button Grid.Column="3">
+                <Button Grid.Column="3" Margin="2,0">
                     <FontIcon Glyph="&#xE721;" />
                 </Button>
 
                 <!--More Options-->
-                <Button Grid.Column="4">
+                <Button Grid.Column="4" Margin="2,0">
                     <FontIcon Glyph="&#xE712;" />
                     <Button.Flyout>
                         <MenuFlyout Placement="Bottom">
@@ -204,7 +237,7 @@
             
             <!--Conversations Message Body-->
             <ListView x:Name="InvertedListView"
-             ItemTemplate="{StaticResource MessageViewTemplate}" ItemsSource="{x:Bind ViewModel.MessagesList}" Grid.Row="1">
+             ItemTemplate="{StaticResource MessageViewTemplate}" ItemsSource="{x:Bind ViewModel.MessagesList}" Grid.Row="1" DataContext="{Binding SelectedDialog}">
 
                 <!-- The ItemsStackPanel must be edited to update the following two properties -->
                 <!-- These properties allow the list to grow from the bottom -->
