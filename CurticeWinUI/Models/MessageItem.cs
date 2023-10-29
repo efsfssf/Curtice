@@ -10,7 +10,7 @@ namespace CurticeWinUI.Models;
 
 public class MessageItem
 {
-    public string MsgText
+    public required string MsgText
     {
         get; set;
     }

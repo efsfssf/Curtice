@@ -21,31 +21,45 @@ namespace CurticeWinUI.ViewModels;
 public class MessagerViewModel : ObservableRecipient
 {
     #region Conversation Screen Header Properties
-    private string _contactName = "Загрузка..";
+    private string _contactName = "One moment please🥱";
     public string ContactName
     {
-        get
-        {
-            return _contactName;
-        }
+        get => _contactName;
         set
         {
             if (_contactName != value)
             {
                 _contactName = value;
-                OnPropertyChanged();
+                OnPropertyChanged(nameof(ContactName));
+            }
+        }
+    }
+    private string _avatar = "";
+    public string Avatar
+    {
+        get => _avatar;
+        set
+        {
+            if (_avatar != value)
+            {
+                _avatar = value;
+                OnPropertyChanged(nameof(Avatar));
             }
         }
     }
 
-    public string Avatar 
-    { 
-        get; set; 
-    }
-
+    private string _last_seen = "";
     public string LastSeen
     {
-        get; set;
+        get => _last_seen;
+        set
+        {
+            if (_last_seen != value)
+            {
+                _last_seen = value;
+                OnPropertyChanged(nameof(LastSeen));
+            }
+        }
     }
     #endregion
 
@@ -78,7 +92,8 @@ public class MessagerViewModel : ObservableRecipient
             }
             SetProperty(ref selectedDialog, value);
             Debug.WriteLine($"Selected dialog changed: {value.Name}, {value.Avatar}");
-            ContactName = value.Name;
+            ContactName = value.Name ?? "DELETED";
+            Avatar = value.Avatar ?? "";
             OnPropertyChanged(nameof(ContactName));
         }
     }
@@ -126,8 +141,8 @@ public class MessagerViewModel : ObservableRecipient
     {
         get;
     }
-    private Dialog rightClickedDialog;
-    public Dialog RightClickedDialog
+    private Dialog? rightClickedDialog = default!;
+    public Dialog? RightClickedDialog
     {
         get => rightClickedDialog;
         set => SetProperty(ref rightClickedDialog, value);
@@ -139,6 +154,17 @@ public class MessagerViewModel : ObservableRecipient
     public ObservableCollection<MessageItem> MessagesList
     {
         get; set;
+    }
+
+    protected string messageText = "";
+    public string MessageText
+    {
+        get => messageText;
+        set
+        {
+            messageText = value;
+            OnPropertyChanged(nameof(MessageText));
+        }
     }
 
 
@@ -233,7 +259,8 @@ public class MessagerViewModel : ObservableRecipient
                 }
             };
 
-        CopyChatIDCommand = new RelayCommand<string>(async (pageKey) => {
+        CopyChatIDCommand = new RelayCommand<string>((pageKey) =>
+        {
             if (pageKey == null)
             {
                 throw new ArgumentNullException(nameof(pageKey));

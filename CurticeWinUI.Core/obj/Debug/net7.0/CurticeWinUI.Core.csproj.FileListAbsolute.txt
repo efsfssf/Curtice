@@ -1,0 +1,12 @@
+D:\VKUI3\CurticeWinUI.Core\bin\Debug\net7.0\CurticeWinUI.Core.deps.json
+D:\VKUI3\CurticeWinUI.Core\bin\Debug\net7.0\CurticeWinUI.Core.dll
+D:\VKUI3\CurticeWinUI.Core\bin\Debug\net7.0\CurticeWinUI.Core.pdb
+D:\VKUI3\CurticeWinUI.Core\obj\Debug\net7.0\CurticeWinUI.Core.csproj.AssemblyReference.cache
+D:\VKUI3\CurticeWinUI.Core\obj\Debug\net7.0\CurticeWinUI.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\VKUI3\CurticeWinUI.Core\obj\Debug\net7.0\CurticeWinUI.Core.AssemblyInfoInputs.cache
+D:\VKUI3\CurticeWinUI.Core\obj\Debug\net7.0\CurticeWinUI.Core.AssemblyInfo.cs
+D:\VKUI3\CurticeWinUI.Core\obj\Debug\net7.0\CurticeWinUI.Core.csproj.CoreCompileInputs.cache
+D:\VKUI3\CurticeWinUI.Core\obj\Debug\net7.0\CurticeWinUI.Core.dll
+D:\VKUI3\CurticeWinUI.Core\obj\Debug\net7.0\refint\CurticeWinUI.Core.dll
+D:\VKUI3\CurticeWinUI.Core\obj\Debug\net7.0\CurticeWinUI.Core.pdb
+D:\VKUI3\CurticeWinUI.Core\obj\Debug\net7.0\ref\CurticeWinUI.Core.dll

@@ -180,8 +180,6 @@
                 <RowDefinition Height="Auto"/>
                 <!--Body-->
                 <RowDefinition />
-                <!--Replay Popup-->
-                <RowDefinition Height="Auto"/>
                 <!--Send Message Box-->
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
@@ -255,6 +253,36 @@
                     </Style>
                 </ListView.ItemContainerStyle>
             </ListView>
+            
+            <!--Textbox to send Message-->
+            <Grid Grid.Row="3">
+                <Border>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <!--TextBox button-->
+                            <ColumnDefinition/>
+                            <!--Attachment Button & Send Message Btn-->
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBox
+                            Background="Transparent"
+                            BorderThickness="0"
+                            VerticalAlignment="Stretch"
+                            VerticalContentAlignment="Center"
+                            Text="{Binding MessageText}"
+                            x:Name="MessageBox"
+                            Padding="12,0,0,0">
+                        </TextBox>
+                    </Grid>
+                </Border>
+                <StackPanel Orientation="Horizontal" Grid.Column="1">
+                    <Button x:Name="AttachButton">
+                        <FontIcon Glyph="&#xE724;" />
+                    </Button>
+                </StackPanel>
+            </Grid>
+
         </Grid>
     </Grid>
 </Page>

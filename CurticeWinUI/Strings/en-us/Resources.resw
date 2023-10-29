@@ -200,7 +200,7 @@
   <data name="Language_Default" xml:space="preserve">
     <value>Use system language</value>
   </data>
-  <data name="Language_Englis" xml:space="preserve">
+  <data name="Language_English" xml:space="preserve">
     <value>English</value>
   </data>
   <data name="Language_Russian" xml:space="preserve">
@@ -226,5 +226,8 @@
   </data>
   <data name="CopyChatID.Text" xml:space="preserve">
     <value>Copy ChatID</value>
+  </data>
+  <data name="Language.Text" xml:space="preserve">
+    <value>Language</value>
   </data>
 </root>

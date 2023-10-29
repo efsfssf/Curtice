@@ -2,6 +2,7 @@ D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Curtice
 D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\appsettings.json
 D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\App.xbf
 D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\MainWindow.xbf
+D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Styles\ContactInfoButtonTemplate.xbf
 D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Styles\FontSizes.xbf
 D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Styles\TextBlock.xbf
 D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Styles\Thickness.xbf
@@ -62,9 +63,8 @@ D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Microso
 D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Microsoft.Windows.Security.AccessControl.Projection.dll
 D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Microsoft.Windows.System.Power.Projection.dll
 D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Microsoft.Windows.System.Projection.dll
-D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Microsoft.Windows.Widgets.Projection.dll
+D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Microsoft.Windows.Widgets.Providers.Projection.dll
 D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
-D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Microsoft.WindowsAppRuntime.Release.Net.dll
 D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Microsoft.Xaml.Interactions.dll
 D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Microsoft.Xaml.Interactivity.dll
 D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Newtonsoft.Json.dll
@@ -292,6 +292,7 @@ D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\V
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\XamlTypeInfo.g.cs
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\App.xaml
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\MainWindow.xaml
+D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Styles\ContactInfoButtonTemplate.xaml
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Styles\FontSizes.xaml
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Styles\TextBlock.xaml
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Styles\Thickness.xaml
@@ -310,6 +311,7 @@ D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\T
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Views\VideosPage.xaml
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\App.xbf
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\MainWindow.xbf
+D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Styles\ContactInfoButtonTemplate.xbf
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Styles\FontSizes.xbf
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Styles\TextBlock.xbf
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Styles\Thickness.xbf
@@ -353,6 +355,3 @@ D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\qualifi
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\qualifiers.txt.intermediate
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\MultipleQualifiersPerDimensionFound.txt
 D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\ProjectArchitectures.txt
-D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Styles\ContactInfoButtonTemplate.xaml
-D:\VKUI3\CurticeWinUI\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Styles\ContactInfoButtonTemplate.xbf
-D:\VKUI3\CurticeWinUI\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\Styles\ContactInfoButtonTemplate.xbf

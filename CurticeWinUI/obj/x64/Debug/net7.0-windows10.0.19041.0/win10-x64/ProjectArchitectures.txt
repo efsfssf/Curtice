@@ -1,0 +1,1 @@
+D:\VKUI3\CurticeWinUI\CurticeWinUI.csproj;x64

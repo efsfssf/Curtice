@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jVXHm6DGBqA0Cn1qxBveyawiHLbj1EQ6eRLnt3uDD6qSpGYubdyqsBT5JRhmtfZ32mgpvM19sVKYvIT23TIqag==",
+  "dgSpecHash": "TnAdmW+Fn8drhlSsguPvctQcx4Db+pZJ5WMQVjUEluRVdIIkFzAZDXfBOgYGV8xtYrcOVw1pXvnths7PKl2Srg==",
   "success": true,
   "projectFilePath": "D:\\VKUI3\\CurticeWinUI.Tests.MSTest\\CurticeWinUI.Tests.MSTest.csproj",
   "expectedPackageFiles": [
@@ -38,7 +38,7 @@
     "C:\\Users\\Bezzu\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.2.0\\microsoft.testplatform.objectmodel.17.2.0.nupkg.sha512",
     "C:\\Users\\Bezzu\\.nuget\\packages\\microsoft.testplatform.testhost\\17.2.0\\microsoft.testplatform.testhost.17.2.0.nupkg.sha512",
     "C:\\Users\\Bezzu\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.1\\microsoft.windows.sdk.buildtools.10.0.22621.1.nupkg.sha512",
-    "C:\\Users\\Bezzu\\.nuget\\packages\\microsoft.windowsappsdk\\1.3.230502000\\microsoft.windowsappsdk.1.3.230502000.nupkg.sha512",
+    "C:\\Users\\Bezzu\\.nuget\\packages\\microsoft.windowsappsdk\\1.4.231008000\\microsoft.windowsappsdk.1.4.231008000.nupkg.sha512",
     "C:\\Users\\Bezzu\\.nuget\\packages\\microsoft.xaml.behaviors.winui.managed\\2.0.9\\microsoft.xaml.behaviors.winui.managed.2.0.9.nupkg.sha512",
     "C:\\Users\\Bezzu\\.nuget\\packages\\mstest.testadapter\\2.2.10\\mstest.testadapter.2.2.10.nupkg.sha512",
     "C:\\Users\\Bezzu\\.nuget\\packages\\mstest.testframework\\2.2.10\\mstest.testframework.2.2.10.nupkg.sha512",
@@ -89,7 +89,7 @@
     "C:\\Users\\Bezzu\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
     "C:\\Users\\Bezzu\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\Bezzu\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
-    "C:\\Users\\Bezzu\\.nuget\\packages\\winuiex\\2.2.0\\winuiex.2.2.0.nupkg.sha512",
+    "C:\\Users\\Bezzu\\.nuget\\packages\\winuiex\\2.3.2\\winuiex.2.3.2.nupkg.sha512",
     "C:\\Users\\Bezzu\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\7.0.12\\microsoft.netcore.app.runtime.win-x86.7.0.12.nupkg.sha512",
     "C:\\Users\\Bezzu\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm\\7.0.12\\microsoft.aspnetcore.app.runtime.win-arm.7.0.12.nupkg.sha512",
     "C:\\Users\\Bezzu\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.29\\microsoft.windows.sdk.net.ref.10.0.19041.29.nupkg.sha512",

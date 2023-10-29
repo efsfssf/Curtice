@@ -828,7 +828,7 @@
           "build/_._": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.3.230502000": {
+      "Microsoft.WindowsAppSDK/1.4.231008000": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -860,9 +860,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
@@ -891,9 +890,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
@@ -1332,19 +1330,19 @@
           }
         }
       },
-      "WinUIEx/2.2.0": {
+      "WinUIEx/2.3.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.3.230502000"
+          "Microsoft.WindowsAppSDK": "1.4.230822000"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
-            "related": ".pdb;.pri;.xml"
+            "related": ".pri;.xml"
           }
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
-            "related": ".pdb;.pri;.xml"
+            "related": ".pri;.xml"
           }
         }
       },
@@ -1355,9 +1353,9 @@
           "CommunityToolkit.Mvvm": "8.1.0",
           "CurticeWinUI.Core": "1.0.0",
           "Microsoft.Extensions.Hosting": "6.0.1",
-          "Microsoft.WindowsAppSDK": "1.3.230502000",
+          "Microsoft.WindowsAppSDK": "1.4.231008000",
           "Microsoft.Xaml.Behaviors.WinUI.Managed": "2.0.9",
-          "WinUIEx": "2.2.0"
+          "WinUIEx": "2.3.2"
         },
         "compile": {
           "bin/placeholder/CurticeWinUI.dll": {}
@@ -2207,7 +2205,7 @@
           "build/_._": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.3.230502000": {
+      "Microsoft.WindowsAppSDK/1.4.231008000": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -2239,9 +2237,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
@@ -2270,9 +2267,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
@@ -2814,19 +2810,19 @@
           }
         }
       },
-      "WinUIEx/2.2.0": {
+      "WinUIEx/2.3.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.3.230502000"
+          "Microsoft.WindowsAppSDK": "1.4.230822000"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
-            "related": ".pdb;.pri;.xml"
+            "related": ".pri;.xml"
           }
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
-            "related": ".pdb;.pri;.xml"
+            "related": ".pri;.xml"
           }
         }
       },
@@ -2837,9 +2833,9 @@
           "CommunityToolkit.Mvvm": "8.1.0",
           "CurticeWinUI.Core": "1.0.0",
           "Microsoft.Extensions.Hosting": "6.0.1",
-          "Microsoft.WindowsAppSDK": "1.3.230502000",
+          "Microsoft.WindowsAppSDK": "1.4.231008000",
           "Microsoft.Xaml.Behaviors.WinUI.Managed": "2.0.9",
-          "WinUIEx": "2.2.0"
+          "WinUIEx": "2.3.2"
         },
         "compile": {
           "bin/placeholder/CurticeWinUI.dll": {}
@@ -3689,7 +3685,7 @@
           "build/_._": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.3.230502000": {
+      "Microsoft.WindowsAppSDK/1.4.231008000": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -3721,9 +3717,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
@@ -3752,9 +3747,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
@@ -4297,19 +4291,19 @@
           }
         }
       },
-      "WinUIEx/2.2.0": {
+      "WinUIEx/2.3.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.3.230502000"
+          "Microsoft.WindowsAppSDK": "1.4.230822000"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
-            "related": ".pdb;.pri;.xml"
+            "related": ".pri;.xml"
           }
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
-            "related": ".pdb;.pri;.xml"
+            "related": ".pri;.xml"
           }
         }
       },
@@ -4320,9 +4314,9 @@
           "CommunityToolkit.Mvvm": "8.1.0",
           "CurticeWinUI.Core": "1.0.0",
           "Microsoft.Extensions.Hosting": "6.0.1",
-          "Microsoft.WindowsAppSDK": "1.3.230502000",
+          "Microsoft.WindowsAppSDK": "1.4.231008000",
           "Microsoft.Xaml.Behaviors.WinUI.Managed": "2.0.9",
-          "WinUIEx": "2.2.0"
+          "WinUIEx": "2.3.2"
         },
         "compile": {
           "bin/placeholder/CurticeWinUI.dll": {}
@@ -5172,7 +5166,7 @@
           "build/_._": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.3.230502000": {
+      "Microsoft.WindowsAppSDK/1.4.231008000": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -5204,9 +5198,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
@@ -5235,9 +5228,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "native": {
           "runtimes/win10-arm64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {}
@@ -5783,19 +5775,19 @@
           }
         }
       },
-      "WinUIEx/2.2.0": {
+      "WinUIEx/2.3.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.3.230502000"
+          "Microsoft.WindowsAppSDK": "1.4.230822000"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
-            "related": ".pdb;.pri;.xml"
+            "related": ".pri;.xml"
           }
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
-            "related": ".pdb;.pri;.xml"
+            "related": ".pri;.xml"
           }
         }
       },
@@ -5806,9 +5798,9 @@
           "CommunityToolkit.Mvvm": "8.1.0",
           "CurticeWinUI.Core": "1.0.0",
           "Microsoft.Extensions.Hosting": "6.0.1",
-          "Microsoft.WindowsAppSDK": "1.3.230502000",
+          "Microsoft.WindowsAppSDK": "1.4.231008000",
           "Microsoft.Xaml.Behaviors.WinUI.Managed": "2.0.9",
-          "WinUIEx": "2.2.0"
+          "WinUIEx": "2.3.2"
         },
         "compile": {
           "bin/placeholder/CurticeWinUI.dll": {}
@@ -6658,7 +6650,7 @@
           "build/_._": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.3.230502000": {
+      "Microsoft.WindowsAppSDK/1.4.231008000": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -6690,9 +6682,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
@@ -6721,9 +6712,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "native": {
           "runtimes/win10-x64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {}
@@ -7268,19 +7258,19 @@
           }
         }
       },
-      "WinUIEx/2.2.0": {
+      "WinUIEx/2.3.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.3.230502000"
+          "Microsoft.WindowsAppSDK": "1.4.230822000"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
-            "related": ".pdb;.pri;.xml"
+            "related": ".pri;.xml"
           }
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
-            "related": ".pdb;.pri;.xml"
+            "related": ".pri;.xml"
           }
         }
       },
@@ -7291,9 +7281,9 @@
           "CommunityToolkit.Mvvm": "8.1.0",
           "CurticeWinUI.Core": "1.0.0",
           "Microsoft.Extensions.Hosting": "6.0.1",
-          "Microsoft.WindowsAppSDK": "1.3.230502000",
+          "Microsoft.WindowsAppSDK": "1.4.231008000",
           "Microsoft.Xaml.Behaviors.WinUI.Managed": "2.0.9",
-          "WinUIEx": "2.2.0"
+          "WinUIEx": "2.3.2"
         },
         "compile": {
           "bin/placeholder/CurticeWinUI.dll": {}
@@ -8143,7 +8133,7 @@
           "build/_._": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.3.230502000": {
+      "Microsoft.WindowsAppSDK/1.4.231008000": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -8175,9 +8165,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
@@ -8206,9 +8195,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "native": {
           "runtimes/win10-x64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {}
@@ -8754,19 +8742,19 @@
           }
         }
       },
-      "WinUIEx/2.2.0": {
+      "WinUIEx/2.3.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.3.230502000"
+          "Microsoft.WindowsAppSDK": "1.4.230822000"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
-            "related": ".pdb;.pri;.xml"
+            "related": ".pri;.xml"
           }
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
-            "related": ".pdb;.pri;.xml"
+            "related": ".pri;.xml"
           }
         }
       },
@@ -8777,9 +8765,9 @@
           "CommunityToolkit.Mvvm": "8.1.0",
           "CurticeWinUI.Core": "1.0.0",
           "Microsoft.Extensions.Hosting": "6.0.1",
-          "Microsoft.WindowsAppSDK": "1.3.230502000",
+          "Microsoft.WindowsAppSDK": "1.4.231008000",
           "Microsoft.Xaml.Behaviors.WinUI.Managed": "2.0.9",
-          "WinUIEx": "2.2.0"
+          "WinUIEx": "2.3.2"
         },
         "compile": {
           "bin/placeholder/CurticeWinUI.dll": {}
@@ -9629,7 +9617,7 @@
           "build/_._": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.3.230502000": {
+      "Microsoft.WindowsAppSDK/1.4.231008000": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -9661,9 +9649,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
@@ -9692,9 +9679,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "native": {
           "runtimes/win10-x86/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {}
@@ -10239,19 +10225,19 @@
           }
         }
       },
-      "WinUIEx/2.2.0": {
+      "WinUIEx/2.3.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.3.230502000"
+          "Microsoft.WindowsAppSDK": "1.4.230822000"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
-            "related": ".pdb;.pri;.xml"
+            "related": ".pri;.xml"
           }
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
-            "related": ".pdb;.pri;.xml"
+            "related": ".pri;.xml"
           }
         }
       },
@@ -10262,9 +10248,9 @@
           "CommunityToolkit.Mvvm": "8.1.0",
           "CurticeWinUI.Core": "1.0.0",
           "Microsoft.Extensions.Hosting": "6.0.1",
-          "Microsoft.WindowsAppSDK": "1.3.230502000",
+          "Microsoft.WindowsAppSDK": "1.4.231008000",
           "Microsoft.Xaml.Behaviors.WinUI.Managed": "2.0.9",
-          "WinUIEx": "2.2.0"
+          "WinUIEx": "2.3.2"
         },
         "compile": {
           "bin/placeholder/CurticeWinUI.dll": {}
@@ -11114,7 +11100,7 @@
           "build/_._": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.3.230502000": {
+      "Microsoft.WindowsAppSDK/1.4.231008000": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.1"
@@ -11146,9 +11132,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
@@ -11177,9 +11162,8 @@
             "related": ".xml"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {},
-          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll": {}
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {},
+          "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "native": {
           "runtimes/win10-x86/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {}
@@ -11725,19 +11709,19 @@
           }
         }
       },
-      "WinUIEx/2.2.0": {
+      "WinUIEx/2.3.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.3.230502000"
+          "Microsoft.WindowsAppSDK": "1.4.230822000"
         },
         "compile": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
-            "related": ".pdb;.pri;.xml"
+            "related": ".pri;.xml"
           }
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
-            "related": ".pdb;.pri;.xml"
+            "related": ".pri;.xml"
           }
         }
       },
@@ -11748,9 +11732,9 @@
           "CommunityToolkit.Mvvm": "8.1.0",
           "CurticeWinUI.Core": "1.0.0",
           "Microsoft.Extensions.Hosting": "6.0.1",
-          "Microsoft.WindowsAppSDK": "1.3.230502000",
+          "Microsoft.WindowsAppSDK": "1.4.231008000",
           "Microsoft.Xaml.Behaviors.WinUI.Managed": "2.0.9",
-          "WinUIEx": "2.2.0"
+          "WinUIEx": "2.3.2"
         },
         "compile": {
           "bin/placeholder/CurticeWinUI.dll": {}
@@ -13202,10 +13186,10 @@
         "schemas/10.0.22621.0/winrt/UapManifestSchema_v8.xsd"
       ]
     },
-    "Microsoft.WindowsAppSDK/1.3.230502000": {
-      "sha512": "0blh8HpYYzhAImeCn6WrSPzx7PEm2O9KWIOz94b5qvgQssZ5TvINpxuIv9iDEf8Jdv9lnkvfpxQgduep378+KQ==",
+    "Microsoft.WindowsAppSDK/1.4.231008000": {
+      "sha512": "RIDsC3YPHkbd1LMrrg9peR7ObkF3uJvynthubY9EJVOpG/QjRFkRvDFSO9PhTTofKpTCkS2KOBbRyengCEmE4g==",
       "type": "package",
-      "path": "microsoft.windowsappsdk/1.3.230502000",
+      "path": "microsoft.windowsappsdk/1.4.231008000",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -13279,7 +13263,6 @@
         "build/Microsoft.WindowsAppSDK.UndockedRegFreeWinRT.CS.targets",
         "build/Microsoft.WindowsAppSDK.UndockedRegFreeWinRTCommon.targets",
         "build/Microsoft.WindowsAppSDK.Widgets.targets",
-        "build/Microsoft.WindowsAppSDK.WinUI.Build.props",
         "build/Microsoft.WindowsAppSDK.WinUI.props",
         "build/Microsoft.WindowsAppSDK.WinUI.targets",
         "build/Microsoft.WindowsAppSDK.props",
@@ -13439,7 +13422,6 @@
         "buildTransitive/Microsoft.WindowsAppSDK.UndockedRegFreeWinRT.CS.targets",
         "buildTransitive/Microsoft.WindowsAppSDK.UndockedRegFreeWinRTCommon.targets",
         "buildTransitive/Microsoft.WindowsAppSDK.Widgets.targets",
-        "buildTransitive/Microsoft.WindowsAppSDK.WinUI.Build.props",
         "buildTransitive/Microsoft.WindowsAppSDK.WinUI.props",
         "buildTransitive/Microsoft.WindowsAppSDK.WinUI.targets",
         "buildTransitive/Microsoft.WindowsAppSDK.props",
@@ -13540,7 +13522,9 @@
         "include/MddBootstrapAutoInitializer.cpp",
         "include/MddBootstrapAutoInitializer.cs",
         "include/Microsoft.UI.Composition.Interop.h",
+        "include/Microsoft.UI.Dispatching.Interop.h",
         "include/Microsoft.UI.Input.InputCursor.Interop.h",
+        "include/Microsoft.UI.Input.InputPreTranslateSource.Interop.h",
         "include/Microsoft.UI.Interop.h",
         "include/Microsoft.Windows.ApplicationModel.Resources.idl",
         "include/MsixDynamicDependency.h",
@@ -13557,8 +13541,6 @@
         "include/dwrite_2.h",
         "include/dwrite_3.h",
         "include/dwrite_core.h",
-        "include/microsoft.ui.xaml.hosting.desktopwindowxamlsource.h",
-        "include/microsoft.ui.xaml.hosting.desktopwindowxamlsource.idl",
         "include/microsoft.ui.xaml.hosting.referencetracker.h",
         "include/microsoft.ui.xaml.hosting.referencetracker.idl",
         "include/microsoft.ui.xaml.media.dxinterop.h",
@@ -13568,11 +13550,15 @@
         "include/wil_msixdynamicdependency.h",
         "include/winrt/Microsoft.UI.Composition.Interop.h",
         "include/winrt/Microsoft.UI.Input.InputCursor.Interop.h",
+        "include/winrt/Microsoft.UI.Input.InputPreTranslateSource.Interop.h",
         "include/winrt/Microsoft.UI.Interop.h",
         "include/winrtdirect3d11.h",
         "include/winrtdirectxcommon.h",
         "include/xamlom.winui.h",
         "include/xamlom.winui.idl",
+        "lib/native/win10-arm64/Microsoft.UI.Dispatching.lib",
+        "lib/native/win10-x64/Microsoft.UI.Dispatching.lib",
+        "lib/native/win10-x86/Microsoft.UI.Dispatching.lib",
         "lib/net6.0-windows10.0.17763.0/Microsoft.InteractiveExperiences.Projection.dll",
         "lib/net6.0-windows10.0.17763.0/Microsoft.InteractiveExperiences.Projection.xml",
         "lib/net6.0-windows10.0.17763.0/Microsoft.WinUI.dll",
@@ -13593,9 +13579,8 @@
         "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.System.Power.Projection.dll",
         "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.System.Power.Projection.xml",
         "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.System.Projection.dll",
-        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.Widgets.Projection.dll",
+        "lib/net6.0-windows10.0.17763.0/Microsoft.Windows.Widgets.Providers.Projection.dll",
         "lib/net6.0-windows10.0.17763.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll",
-        "lib/net6.0-windows10.0.17763.0/Microsoft.WindowsAppRuntime.Release.Net.dll",
         "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll",
         "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.xml",
         "lib/net6.0-windows10.0.18362.0/Microsoft.WinUI.dll",
@@ -13616,9 +13601,8 @@
         "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll",
         "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.xml",
         "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll",
-        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll",
+        "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll",
         "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll",
-        "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Release.Net.dll",
         "lib/uap10.0.17763/Microsoft.Foundation.winmd",
         "lib/uap10.0.17763/Microsoft.Foundation.xml",
         "lib/uap10.0.17763/Microsoft.Graphics.winmd",
@@ -13673,26 +13657,26 @@
         "manifests/Microsoft.InteractiveExperiences.manifest",
         "manifests/Microsoft.WindowsAppSdk.Foundation.manifest",
         "manifests/manifests/Microsoft.WindowsAppSdk.WinUI.manifest",
-        "microsoft.windowsappsdk.1.3.230502000.nupkg.sha512",
+        "microsoft.windowsappsdk.1.4.231008000.nupkg.sha512",
         "microsoft.windowsappsdk.nuspec",
         "runtimes/win10-arm64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll",
         "runtimes/win10-x64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll",
         "runtimes/win10-x86/native/Microsoft.WindowsAppRuntime.Bootstrap.dll",
         "tools/MSIX/win10-arm64/MSIX.inventory",
-        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.1.3.msix",
-        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.DDLM.1.3.msix",
-        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.Main.1.3.msix",
-        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.Singleton.1.3.msix",
+        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.1.4.msix",
+        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.DDLM.1.4.msix",
+        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.Main.1.4.msix",
+        "tools/MSIX/win10-arm64/Microsoft.WindowsAppRuntime.Singleton.1.4.msix",
         "tools/MSIX/win10-x64/MSIX.inventory",
-        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.1.3.msix",
-        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.DDLM.1.3.msix",
-        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.Main.1.3.msix",
-        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.Singleton.1.3.msix",
+        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.1.4.msix",
+        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.DDLM.1.4.msix",
+        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.Main.1.4.msix",
+        "tools/MSIX/win10-x64/Microsoft.WindowsAppRuntime.Singleton.1.4.msix",
         "tools/MSIX/win10-x86/MSIX.inventory",
-        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.1.3.msix",
-        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.DDLM.1.3.msix",
-        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.Main.1.3.msix",
-        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.Singleton.1.3.msix",
+        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.1.4.msix",
+        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.DDLM.1.4.msix",
+        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.Main.1.4.msix",
+        "tools/MSIX/win10-x86/Microsoft.WindowsAppRuntime.Singleton.1.4.msix",
         "tools/NOTICE.txt",
         "tools/arm64/GenXbf.dll",
         "tools/net472/Microsoft.Bcl.AsyncInterfaces.dll",
@@ -15966,20 +15950,23 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "WinUIEx/2.2.0": {
-      "sha512": "w4X+TEeGzM7w012nM5Fi/NafpV3x4SxoZs/BvN3mNve2hmCh1/GGDqM5NqbOlC9CufdhOEg83tcOjZn8nqXs5g==",
+    "WinUIEx/2.3.2": {
+      "sha512": "YOUIU6k1psJC5JPn+TGh3NO8ZBlmCA8okhCgaG5BE04die0cjt53pwdzBC/42e/SNtOYybVMSUWF4cwPBHg8Bg==",
       "type": "package",
-      "path": "winuiex/2.2.0",
+      "path": "winuiex/2.3.2",
+      "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
+        "analyzers/dotnet/cs/WinUIEx.Analyzers.dll",
         "lib/net6.0-windows10.0.18362/WinUIEx.dll",
-        "lib/net6.0-windows10.0.18362/WinUIEx.pdb",
         "lib/net6.0-windows10.0.18362/WinUIEx.pri",
         "lib/net6.0-windows10.0.18362/WinUIEx.xml",
         "logo.png",
-        "winuiex.2.2.0.nupkg.sha512",
+        "tools/install.ps1",
+        "tools/uninstall.ps1",
+        "winuiex.2.3.2.nupkg.sha512",
         "winuiex.nuspec"
       ]
     },
