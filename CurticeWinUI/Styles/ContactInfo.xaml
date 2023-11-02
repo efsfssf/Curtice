@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="CurticeWinUI.Styles.ContactInfo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CurticeWinUI.Styles"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:CurticeWinUI.Models" xmlns:viewmodels="using:CurticeWinUI.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:MessagerViewModel}"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <DataTemplate x:Key="LinedFlowLayoutItemTemplate" x:DataType="models:AttachmentPhotosObject">
+            <ItemContainer AutomationProperties.Name="{x:Bind Title}">
+                <Grid>
+                    <Image Source="{x:Bind ImageLocation}" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="70"/>
+                    <StackPanel Orientation="Vertical" Height="40" VerticalAlignment="Bottom" Padding="5,1,5,1" Background="{ThemeResource SystemControlBackgroundBaseMediumBrush}" Opacity=".75">
+                        <TextBlock Text="{x:Bind Title}" Foreground="{ThemeResource SystemControlForegroundAltHighBrush}"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{x:Bind Likes}" Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource SystemControlForegroundAltHighBrush}"/>
+                            <TextBlock Text=" Likes" Style="{ThemeResource CaptionTextBlockStyle}" Foreground="{ThemeResource SystemControlForegroundAltHighBrush}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </ItemContainer>
+        </DataTemplate>
+    </UserControl.Resources>
+
+
+    <Grid BorderBrush="White" BorderThickness="1" MaxWidth="400">
+        <Grid.RowDefinitions>
+            <!--Close contact button-->
+            <RowDefinition Height="75"/>
+            <!--Contact Info & Media-->
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Button Margin="15,0" HorizontalAlignment="Left">
+            <FontIcon Glyph="&#xE8BB;" />
+        </Button>
+
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled" Grid.Row="1">
+            <StackPanel Margin="20">
+
+                <!--Profile Photo-->
+                <PersonPicture ProfilePicture="https://learn.microsoft.com/windows/uwp/contacts-and-calendar/images/shoulder-tap-static-payload.png" />
+
+                <!--Contact Name-->
+                <TextBlock Margin="0,20,0,0" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" Text="{Binding ContactName, FallbackValue='Contact Name', TargetNullValue='Contact Name', UpdateSourceTrigger=PropertyChanged}"/>
+
+                <!--Contact Online Status-->
+                <TextBlock HorizontalAlignment="Center" Text="{Binding LastSeen, FallbackValue='Test Seen', TargetNullValue='Test Seen', UpdateSourceTrigger=PropertyChanged}"/>
+
+                <!--Media, Links & Files-->
+
+                <Pivot Title="Attachments" HorizontalAlignment="Right" >
+                    <PivotItem Header="Photos">
+                        <ItemsView Width="500" Height="400" HorizontalAlignment="Left" ItemTemplate="{StaticResource LinedFlowLayoutItemTemplate}" ItemsSource="{Binding PhotoItems}">
+                            <ItemsView.Layout>
+                                <LinedFlowLayout ItemsStretch="Fill" LineHeight="160" LineSpacing="5" MinItemSpacing="5"/>
+                            </ItemsView.Layout>
+                        </ItemsView>
+                    </PivotItem>
+                    <PivotItem Header="Videos">
+                        <TextBlock Text="unread emails go here." />
+                    </PivotItem>
+                    <PivotItem Header="Musics">
+                        <TextBlock Text="unread emails go here." />
+                    </PivotItem>
+                    <PivotItem Header="Services">
+                        <TextBlock Text="unread emails go here." />
+                    </PivotItem>
+                    <PivotItem Header="Files">
+                        <TextBlock Text="unread emails go here." />
+                    </PivotItem>
+                    <PivotItem Header="Links">
+                        <TextBlock Text="unread emails go here." />
+                    </PivotItem>
+                </Pivot>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

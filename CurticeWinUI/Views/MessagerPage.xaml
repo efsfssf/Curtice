@@ -7,6 +7,7 @@
     mc:Ignorable="d"
     x:Name="MyPage"
     xmlns:viewmodels="using:CurticeWinUI.ViewModels"
+    xmlns:styles="using:CurticeWinUI.Styles"
     xmlns:models="using:CurticeWinUI.Models" d:DataContext="{d:DesignInstance Type=viewmodels:MessagerViewModel}">
 
     <Page.Resources>
@@ -30,11 +31,11 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
-            <!--Column Chat Contact List-->
-            <ColumnDefinition/>
-            <!--Conversation Area-->
+
+            <ColumnDefinition />
+
             <ColumnDefinition Width="Auto"/>
-            <!--Profile Info-->
+
         </Grid.ColumnDefinitions>
 
         <!--#region ChatList Список сообщений с поиском-->
@@ -42,7 +43,8 @@
             <Grid.RowDefinitions>
                 <!--Searchbox-->
                 <RowDefinition Height="Auto"/>
-
+                <!--Title Chats-->
+                <RowDefinition Height="Auto"/>
                 <!--Chats List-->
                 <RowDefinition/>
             </Grid.RowDefinitions>
@@ -72,10 +74,13 @@
                 </DropDownButton>
             </Grid>
 
-            <Grid
-                Grid.Row="1"
+            <TextBlock Grid.Row="1" FontWeight="SemiBold" VerticalAlignment="Center" Margin="5,0" Padding="0,5">
+                <Run Text="&#xE8FD;" FontFamily="Segoe MDL2 Assets"/>
+                <Run Text="All Chats"/>
+            </TextBlock>
+
+            <Grid Grid.Row="2">
                 
-                >
                 <ListView Grid.Column="0" ItemsSource="{x:Bind ViewModel.Dialogs}" 
                     SelectedItem="{x:Bind ViewModel.SelectedDialog, Mode=TwoWay}"
                           RightTapped="ListView_RightTapped" >
@@ -144,124 +149,132 @@
         <!--<Grid Grid.Column="1" Grid.Row="1" BorderBrush="#80000000" Opacity="0.2" BorderThickness="0.5,0,0,0"/>-->
 
         <!--#region BodyChat Список сообщений с выбранным диалогом-->
-        <Border Grid.Column="2" Grid.Row="1" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" BorderThickness="0" CornerRadius="15">
-            <Grid Padding="15">
+        <Border Grid.Column="2" Grid.Row="1" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" BorderThickness="0" CornerRadius="15" Padding="15" >
+            <Grid>
             
-            <Grid.RowDefinitions>
-                <!--Conversation Header-->
-                <RowDefinition Height="Auto"/>
-                <!--Body-->
-                <RowDefinition />
-                <!--Send Message Box-->
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
+                <Grid.RowDefinitions>
+                    <!--Conversation Header-->
+                    <RowDefinition Height="Auto"/>
+                    <!--Body-->
+                    <RowDefinition />
+                    <!--Send Message Box-->
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
 
-            <Grid
-                Margin="5"
-                VerticalAlignment="Center"
-                x:Name="Header1">
-                <Grid.ColumnDefinitions>
-                    <!--Contact Header Name & Online Status-->
-                    <ColumnDefinition />
+                <Grid
+                    Margin="5"
+                    VerticalAlignment="Center"
+                    x:Name="Header1"
+                    
+                    
+                    >
+                    <Grid.ColumnDefinitions>
+                        <!--Contact Header Name & Online Status-->
+                        <ColumnDefinition />
+                        <!--Video Call Button-->
+                        <ColumnDefinition Width="Auto"/>
+                        <!--Call Button-->
+                        <ColumnDefinition Width="Auto"/>
+                        <!--Search Message Button-->
+                        <ColumnDefinition Width="Auto"/>
+                        <!--More Options-->
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!--Contact Info Button-->
+                    <Button Template="{StaticResource ContactInfoButtonTemplate}" />
+
+
                     <!--Video Call Button-->
-                    <ColumnDefinition Width="Auto"/>
+                    <Button Grid.Column="1" Margin="2,0">
+                        <FontIcon Glyph="&#xE8AA;" />
+                    </Button>
+
                     <!--Call Button-->
-                    <ColumnDefinition Width="Auto"/>
+                    <Button Grid.Column="2" Margin="2,0">
+                        <FontIcon Glyph="&#xF715;" />
+                    </Button>
+
                     <!--Search Message Button-->
-                    <ColumnDefinition Width="Auto"/>
+                    <Button Grid.Column="3" Margin="2,0">
+                        <FontIcon Glyph="&#xE721;" />
+                    </Button>
+
                     <!--More Options-->
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
+                    <Button Grid.Column="4" Margin="2,0">
+                        <FontIcon Glyph="&#xE712;" />
+                        <Button.Flyout>
+                            <MenuFlyout Placement="Bottom">
+                                <MenuFlyoutItem Text="Send"/>
+                                <MenuFlyoutItem Text="Reply"/>
+                                <MenuFlyoutItem Text="Reply All"/>
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
+                </Grid>
 
-                <!--Contact Info Button-->
-                <Button Template="{StaticResource ContactInfoButtonTemplate}" />
+                <!--Conversations Message Body-->
+                <ListView x:Name="InvertedListView"
+                 ItemTemplate="{StaticResource MessageViewTemplate}" ItemsSource="{x:Bind ViewModel.MessagesList}" Grid.Row="1" DataContext="{Binding SelectedDialog}">
 
+                    <!-- The ItemsStackPanel must be edited to update the following two properties -->
+                    <!-- These properties allow the list to grow from the bottom -->
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <ItemsStackPanel ItemsUpdatingScrollMode="KeepLastItemInView"
+                                  VerticalAlignment="Bottom"/>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
 
-                <!--Video Call Button-->
-                <Button Grid.Column="1" Margin="2,0">
-                    <FontIcon Glyph="&#xE8AA;" />
-                </Button>
-
-                <!--Call Button-->
-                <Button Grid.Column="2" Margin="2,0">
-                    <FontIcon Glyph="&#xF715;" />
-                </Button>
-
-                <!--Search Message Button-->
-                <Button Grid.Column="3" Margin="2,0">
-                    <FontIcon Glyph="&#xE721;" />
-                </Button>
-
-                <!--More Options-->
-                <Button Grid.Column="4" Margin="2,0">
-                    <FontIcon Glyph="&#xE712;" />
-                    <Button.Flyout>
-                        <MenuFlyout Placement="Bottom">
-                            <MenuFlyoutItem Text="Send"/>
-                            <MenuFlyoutItem Text="Reply"/>
-                            <MenuFlyoutItem Text="Reply All"/>
-                        </MenuFlyout>
-                    </Button.Flyout>
-                </Button>
-            </Grid>
+                    <!-- This setter property is created so ListViewItems correctly align to the left or right. -->
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                </ListView>
             
-            <!--Conversations Message Body-->
-            <ListView x:Name="InvertedListView"
-             ItemTemplate="{StaticResource MessageViewTemplate}" ItemsSource="{x:Bind ViewModel.MessagesList}" Grid.Row="1" DataContext="{Binding SelectedDialog}">
+                <!--Textbox to send Message-->
+                <Grid Grid.Row="3">
+                    <Border>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <!--TextBox button-->
+                                <ColumnDefinition/>
+                                <!--Attachment Button & Send Message Btn-->
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
 
-                <!-- The ItemsStackPanel must be edited to update the following two properties -->
-                <!-- These properties allow the list to grow from the bottom -->
-                <ListView.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <ItemsStackPanel ItemsUpdatingScrollMode="KeepLastItemInView"
-                              VerticalAlignment="Bottom"/>
-                    </ItemsPanelTemplate>
-                </ListView.ItemsPanel>
-
-                <!-- This setter property is created so ListViewItems correctly align to the left or right. -->
-                <ListView.ItemContainerStyle>
-                    <Style TargetType="ListViewItem">
-                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-                    </Style>
-                </ListView.ItemContainerStyle>
-            </ListView>
-            
-            <!--Textbox to send Message-->
-            <Grid Grid.Row="3">
-                <Border>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <!--TextBox button-->
-                            <ColumnDefinition/>
-                            <!--Attachment Button & Send Message Btn-->
-                            <ColumnDefinition Width="Auto"/>
-                        </Grid.ColumnDefinitions>
-
-                        <TextBox
-                            Background="{ThemeResource ControlFillColorInputActiveBrush}"
-                            BorderThickness="0"
-                            VerticalAlignment="Stretch"
-                            VerticalContentAlignment="Center"
-                            Text="{Binding MessageText}"
-                            x:Name="MessageBox"
-                            Padding="12,0,0,0">
-                        </TextBox>
-                        <!--Buttons-->
-                        <StackPanel Orientation="Horizontal" Grid.Column="1">
+                            <TextBox
+                                Background="{ThemeResource ControlFillColorInputActiveBrush}"
+                                BorderThickness="0"
+                                VerticalAlignment="Stretch"
+                                VerticalContentAlignment="Center"
+                                Text="{Binding MessageText}"
+                                x:Name="MessageBox"
+                                Padding="12,0,0,0">
+                            </TextBox>
+                            <!--Buttons-->
+                            <StackPanel Orientation="Horizontal" Grid.Column="1">
                                 <Button x:Name="AttachButton" Margin="12,0,0,0">
-                                <FontIcon Glyph="&#xE723;" />
-                            </Button>
+                                    <FontIcon Glyph="&#xE723;" />
+                                </Button>
                                 <Button x:Name="SendButton" Margin="12,0,0,0" Style="{StaticResource AccentButtonStyle}">
                                     <FontIcon Glyph="&#xE724;" />
-                            </Button>
-                        </StackPanel>
-                    </Grid>
-                </Border>
-                
-                
-            </Grid>
+                                </Button>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
 
-        </Grid>
+
+                </Grid>
+
+            </Grid>
+        </Border>
+        
+        <!--#region ChatInfo Информация о выбранном диалоге-->
+        <Border Grid.Row="1" Grid.Column="3" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" BorderThickness="0" CornerRadius="15" Margin="5,0" Padding="15">
+            <styles:ContactInfo x:Name="ContactInfo" />
         </Border>
     </Grid>
 </Page>

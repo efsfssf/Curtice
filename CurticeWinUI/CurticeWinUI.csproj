@@ -18,6 +18,7 @@
     <Content Remove="Assets\avatar1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="Styles\ContactInfo.xaml" />
     <None Remove="Styles\ContactInfoButtonTemplate.xaml" />
   </ItemGroup>
 
@@ -40,6 +41,9 @@
     <None Update="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Page Update="Styles\ContactInfo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Update="Styles\ContactInfoButtonTemplate.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>

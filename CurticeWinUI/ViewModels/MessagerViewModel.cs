@@ -48,7 +48,7 @@ public class MessagerViewModel : ObservableRecipient
         }
     }
 
-    private string _last_seen = "";
+    private string _last_seen = "Test Online";
     public string LastSeen
     {
         get => _last_seen;
@@ -169,6 +169,21 @@ public class MessagerViewModel : ObservableRecipient
 
 
     #endregion
+
+    #region Dialog Info
+    private ObservableCollection<AttachmentPhotosObject> photoItem;
+
+    public ObservableCollection<AttachmentPhotosObject> PhotoItems
+    {
+        get => photoItem;
+        set
+        {
+            photoItem = value;
+            OnPropertyChanged("PhotoItem");
+        }
+    }
+
+    #endregion
     public MessagerViewModel()
     {
         MessagesList = new ObservableCollection<MessageItem>
@@ -267,6 +282,12 @@ public class MessagerViewModel : ObservableRecipient
             }
             OnCopyChatID(pageKey);
         });
+
+        PhotoItems = new ObservableCollection<AttachmentPhotosObject>
+        {
+            new AttachmentPhotosObject { Title = "Item 1", ImageLocation = new BitmapImage(new Uri("ms-appx:///Assets/avatar1.png")), Likes = 10 },
+            new AttachmentPhotosObject { Title = "Item 2", ImageLocation = new BitmapImage(new Uri("ms-appx:///Assets/avatar1.png")), Likes = 20 },
+        };
 
         // Инициализация команд и коллекций
         AttachCommand = new RelayCommand(OnAttach);
